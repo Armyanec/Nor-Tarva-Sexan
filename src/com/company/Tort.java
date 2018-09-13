@@ -1,4 +1,14 @@
-public class tort {
+package com.company;
+
+public class Tort {
+
+    String dzu;
+    String alyur;
+    String dzet;
+    String shaqaravaz;
+    String duxovka;
+    String mom;
+
 
 
     String patrastelHumtort (String dzet, String dzu, String alur) {
