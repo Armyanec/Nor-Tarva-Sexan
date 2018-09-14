@@ -2,9 +2,10 @@ package com.company.receptner;
 
 public class Plane {
 
-    private String title;
-    private Integer count;
-    private Integer speed;
+    private String title ;
+    private Integer count ;
+    private Integer speed ;
+
 
 
     public String getTitle(){
@@ -21,13 +22,19 @@ public class Plane {
     }
 
     public  void setCount(Integer count){
-        this.count = count;
+        if (count.equals(100)) {
+            this.count = count;
+        }
     }
 
     public Integer getSpeed(){
         return speed;
     }
-    public  void setSpeed(Integer speed){
-        this.speed = speed;
+    public  void setSpeed(Integer speed) {
+        if (speed < 1500) {
+            this.speed = speed;
+        }
+
     }
+
 }

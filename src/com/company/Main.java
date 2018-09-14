@@ -56,10 +56,9 @@ public class Main {
 
 
         Plane plane = new Plane();
-        plane.setSpeed(1200);
+        plane.setSpeed(1400);
         plane.setTitle("manual");
         plane.setCount(100);
-
 
         System.out.println(plane.getTitle()+"\tgirq");
         System.out.println(plane.getCount()+"\tnstatexer");
