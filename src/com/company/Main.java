@@ -64,5 +64,6 @@ public class Main {
         System.out.println(plane.getTitle()+"\tgirq");
         System.out.println(plane.getCount()+"\tnstatexer");
         System.out.println(plane.getSpeed()+"\t aragutyun");
+
     }
 }
