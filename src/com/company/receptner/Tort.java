@@ -81,7 +81,6 @@ public class Tort {
         return this.dzet;
 }
 
-
     public void setDzet(String dzet){
     if (dzet.equals("pakas"))
         this.dzet = "2 litr";

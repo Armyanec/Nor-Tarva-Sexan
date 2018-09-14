@@ -11,7 +11,6 @@ public class Tolma {
     private String aman;
     private String sox;
 
-
     String tolmifarsh  (){
         return this.brindz + this.lobi + this.sox ;
     }
@@ -60,6 +59,16 @@ public class Tolma {
                 this.karag = "15 kilo";
             }
 
+
         }
+
+        public  String getLobi(){
+        return  this.lobi ;
+        }
+
+        public  void  setLobi(){
+
+
     }
+}
 
