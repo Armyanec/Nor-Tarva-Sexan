@@ -1,7 +1,6 @@
 package com.company.receptner;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Masivner15 {
@@ -49,39 +48,43 @@ public class Masivner15 {
 //_____________________________________________________
 //    Ввести с клавиатуры значения трех сторон треугольника a, b и c и
 //    определить, является ли он прямоугольным. Ответ вывести в виде сообщения.
-        List<Float> masiv = new ArrayList <Float>();
+
 
         Scanner f = new Scanner(System.in);
-
-        float x = f.nextInt();
-        masiv.add(x);
-        float y = f.nextInt();
-        masiv.add(y);
-        float z = f.nextInt();
-        masiv.add(z);
+        float[] masiv = new float[3];
+        masiv[0] = f.nextFloat();
+        masiv[1] = f.nextFloat();
+        masiv[2] = f.nextFloat();
 
 
-        for (int i = 0; i < masiv.size(); i++) {
+        for (int i = 0; i < masiv.length; i++) {
 
+            float temp = masiv[i];
 
-            for (int j = 0; j < masiv.size(); j++) {
+            for (int j = 0; j < masiv.length; j++) {
 
+                if (masiv[i] > masiv[j]){
+                    masiv[i] = masiv[j];
+                    masiv[j] = temp;
+                    System.out.println(Arrays.toString(masiv));
 
-                if (masiv.get(i) > masiv.get(j)){
-                    masiv.get(i) = masiv.get(j);
                 }
 
 
+              }
+
+
             }
-        }
 
 
-                     if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)) {
+        float a = masiv[0];
+        float b = masiv[1];
+        float c = masiv[2];
+        if (Math.pow(a, 2) + Math.pow(b, 2) == Math.pow(c, 2)) {
 
-                         System.out.println("uxankyun erankyun");
+            System.out.println("uxankyun erankyun");
 
-                     } else System.out.println("uxankyun erankyun chi");
-
+        } else System.out.println("uxankyun erankyun chi");
                  }
              }
 
