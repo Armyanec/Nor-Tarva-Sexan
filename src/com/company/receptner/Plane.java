@@ -4,8 +4,9 @@ public class Plane {
 
     private String title ;
     private Integer count ;
-    private Integer speed ;
+    private Integer speed;
 
+    private String x = speed.toString();
 
 
     public String getTitle(){
@@ -28,8 +29,11 @@ public class Plane {
     }
 
     public Integer getSpeed(){
-        return speed;
+
+      return speed;
+
     }
+
     public  void setSpeed(Integer speed) {
         if (speed < 1500) {
             this.speed = speed;
