@@ -1,5 +1,7 @@
 package com.company.receptner;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -1365,8 +1367,108 @@ public class Main {
 //        }
 //        System.out.println();
 //        System.out.print(haryuravor +" "+ tasnavor +" "+ miavor);
+//68_______________________________________
+//        float drakanTarer = 0f;
+//        float sum = 0f;
+//        int[] masiv = {1,-2,6,5,-4,-8,-9,7};
+//        for (int i = 0; i < masiv.length; i++) {
+//        if (masiv[i] > 0){
+//            sum++;
+//            drakanTarer += masiv[i];
+//        }
+//
+//        }
+//        System.out.println(drakanTarer/sum);
+
+//69_______________________________________
+
+//        float drakanTarer = 0f;
+//
+//        int[] masiv = {1,-2,6,5,-4,-8,-9,7};
+//        for (int i = 0; i < masiv.length; i++) {
+//        if (masiv[i] > 0){
+//
+//            drakanTarer += masiv[i];
+//        }
+//
+//        }
+//        System.out.println(Math.sqrt(drakanTarer));
+
+
+//70_______________________________________
+
+//        float drakanTarer = 0f;
+//
+//        int[] masiv = {1,-2,6,5,-4,-8,-9,7};
+//        for (int i = 0; i < masiv.length; i++) {
+//        if (masiv[i] < 0){
+//
+//            drakanTarer += masiv[i];
+//        }
+//
+//        }
+//        System.out.println(Math.sqrt(drakanTarer*-1));
+
+//int[] masiv = {5,1,6,8,7,9};
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//
+//            for (int j = i+1; j < masiv.length; j++) {
+//
+//                if (masiv[i] > masiv[j]){
+//                    int temp = masiv[i];
+//                    masiv[i] = masiv[j];
+//                    masiv[j] = temp;
+//                }
+//
+//
+//            }
+//
+//        }
+//        System.out.println(Arrays.toString(masiv));
+
+//        1. Напишите программу, которая считывает символы пока не встретится
+//           точка. Также предусмотрите вывод количества пробелов.
+
+
+//        Scanner in = new Scanner(System.in);
+//        String input = in.next();
+//
+//        char[] masiv = input.toCharArray();
+//        int sum = 0;
+//        for (int i = 0; i < masiv.length; i++) {
+//
+//
+//
+//            if (masiv[i] == '.'){
+//                break;
+//            }
+//            sum++;
+//            System.out.print(masiv[i]);
+//
+//        }
+//        System.out.println();
+//        System.out.println(sum);
+
+// 3. Напишите метод, который будет увеличивать заданный элемент массива на 10%.
+//        Scanner in = new Scanner(System.in);
+//        int x = in.nextInt();
+//        float [] masiv = {5,2,3,4,6,8,};
+//
+//        float ardyunq = masiv[x] + masiv[x]*10/100;
+//        System.out.println(ardyunq);
+
+//4. Напишите метод, заменяющий в строке все вхождения слова «бяка» на «вырезано цензурой»
+
+        Scanner in = new Scanner(System.in);
+        String input = in.next().toString();
+
+
+        String input1 = input.replaceAll("fack","xxx");
+        System.out.println(input1);
 
     }
+
 
 
 }
