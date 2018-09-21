@@ -17,17 +17,6 @@ public  void setTitle (String title) {
 
 }
 
-public Integer getCount() {
-    return count;
-    }
-        public void setCount(Integer count){
-        this.count = count;
-        }
-    public Integer getSpeed(){
-        return speed;
-    }
-public  void setSpeed(Integer speed){
-        this.speed = speed;
-}
+
 
 }
