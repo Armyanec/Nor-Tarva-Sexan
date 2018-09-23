@@ -1,5 +1,8 @@
 package com.company.receptner;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -1050,17 +1053,17 @@ public class Main {
 //        System.out.println(y);
 
 // 57. ___________________________________________
-
+//
 //    int n = 1232896;
 //    int sum = 0;
 //
 //    while (n > 0){
-//        n = n/10;
-//        sum++;
+//        n = n%10;
+//        sum+=n;
 //    }
 //
 //        System.out.println(sum);
-//
+
 
 
 // 58. ___________________________________________
@@ -1460,12 +1463,255 @@ public class Main {
 
 //4. Напишите метод, заменяющий в строке все вхождения слова «бяка» на «вырезано цензурой»
 
+//        Scanner in = new Scanner(System.in);
+//        String input = in.nextLine();
+//
+//
+//        String input1 = input.replaceAll("fack","xxx");
+//        System.out.println(input1);
+
+
+//        for (int i = 2; i <101 ; i++) {
+//
+//            if (i%2 == 0) {
+//                System.out.print(i);
+//            }
+//        }
+
+   //     Напишите рекурсивный метод отображающий строку задом на перед
+
+//String masiv = "Aram";
+//
+//
+//      String tox = new StringBuffer(masiv).reverse().toString();
+//        System.out.println(tox);
+
+
+//10. Найдите победителя марафона.
+//Группа людей участвует в марафоне, их имена и время за которое
+// они пробежали марафон вы можете увидеть ниже.
+//Ваша задача найти человека, который быстрее всех
+// пробежал дистанцию и вывести его имя и счет.
+//(Опционально) Найдите человека, который прибежал вторым
+
+//__________________________________________________________________________
+//        String[] names = { "Elena", "Thomas", "Hamilton", "Suzie", "Phil",
+//                "Matt", "Alex", "Emma", "John", "James", "Jane", "Emily",
+//                "Daniel", "Neda", "Aaron", "Kate" };
+//
+//        int[] times = { 341, 273, 278, 329, 445, 402, 388, 275, 243,
+//                334, 412, 393, 299, 343, 317, 265 };
+//
+//        for (int i = 0; i < times.length; i++) {
+//            for (int j = 1; j < times.length-1; j++) {
+//
+//
+//            }
+//
+//
+//
+//            }
+//        }
+
+//_____________________________________________________________________________________
+
+
+//74 _____________________________
+
+//        int[] masiv = {3,5,2,4,7};
+//        int sum = 0;
+//        double kent = 0;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//
+//            if (masiv[i]%2 != 0){
+//                kent +=Math.pow(masiv[i],2) ;
+//                sum += 1;
+//            }
+//
+//        }
+//
+//        System.out.println(kent/sum);
+
+//77 _____________________________
+
+//        int[] masiv = {3,5,2,4,7};
+//int zuyg = 0;
+//int kent = 0;
+//        for (int i = 0; i < masiv.length; i++) {
+//
+//            if (masiv[i]%2 == 0){
+//                zuyg += 1;
+//            }
+//        else kent += 1;
+//        }
+//
+//        System.out.println("zuyg\t"+zuyg);
+//        System.out.println("kent\t"+kent);
+
+//78 _____________________________
+//        int[] masiv = {3,5,6,1,2,4,7};
+//
+//        int a = 3;
+//        int b = 6;
+//        int sum = 0;
+//        int tarer = 0;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//
+//            if (i > a && i < b){
+//                sum +=1;
+//                tarer += masiv[i];
+//            }
+//        }
+//        System.out.println(tarer/sum);
+
+//81 _____________________________
+//
+//        int[] masiv = {3,5,6,1,2,4,7};
+//      int k = 5;
+//      int sum = 0;
+//        for (int i = 0; i < masiv.length; i++) {
+//
+//            if (masiv[i] < k){
+//            sum += Math.pow(masiv[i] , 3);
+//            }
+//
+//        }
+//
+//        System.out.println(sum);
+
+
+//        for (int i = 0; i < 10; i++) {
+//            for (int j = 0; j < 10-i ; j++) {
+//
+//                System.out.print('x');
+//
+//            }
+//            System.out.println();
+//        }
+
+
+//84________________________________
+
+
+//    int[] masiv = {4,1,5,2,8,9,6};
+//
+//    int sum = 0;
+//    int tar = 0;
+//    int k = 2;
+//
+//        for (int i = 1; i < masiv.length; i++) {
+//
+//            if (k == Mat.pow(i,2){
+//                tar =+ masiv[i];
+//                sum =+ 1;
+//            }
+//        }
+//
+//        System.out.println(tar/sum);
+
+
+//85________________________________
+
+//        int[] masiv = {4,1,5,2,8,9,6};
+//
+//
+//    int tar = 0;
+//    int k = 2;
+//
+//        for (int i = 1; i < masiv.length; i++) {
+//
+//            if (i % k == 0){
+//                tar =+ masiv[i];
+//
+//            }
+//        }
+//
+//        System.out.println(tar);
+
+//86________________________________
+//
+//        int[] masiv = {4,3,1,8,9,7,5,1,10,45,71};
+//        int sum = 0;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] - i > 0){
+//                sum += 1;
+//            }
+//
+//        }
+//        System.out.println(sum);
+
+
+//88________________________________
+
+//    Scanner in = new Scanner(System.in);
+
+//    String out = new  StringBuffer(in.nextLine()).reverse().toString();
+//String out = in.nextLine().replace("Aram","aaa");
+
+//int count = in.nextInt();
+//int diapazon = in.nextInt();
+//
+//        for (int i = 0; i < count; i++) {
+//            Random ran = new Random();
+//            int outx = ran.nextInt(diapazon);
+//            System.out.println("Hellow\t" + outx);
+//        }
+
+//        Scanner in = new Scanner(System.in);
+//        String bazapass = "Aram";
+//        System.out.println("Mutqagreq gaxtnabar@");
+//        String pass = in.next();
+//
+//        if (bazapass.compareTo(pass) == 0){
+//            System.out.println("welcome");
+//        }
+//        else {
+//            System.out.println("gaxtnabar@ sxal e");
+//        }
+
+// tpel zangvaci mecaguyn ev poqraguyn tareri arjeqner@:
+//
+//      int[] tver = {5, 4, 2, 6, 3, 7, 8, 9};
+//
+//        int mec = 0;
+//        int poqr = 0;
+//
+//
+//        for (int i = 0; i < tver.length; i++) {
+//
+//            for (int j = 0; j < tver.length; j++) {
+//
+//                if (tver[i] > tver[j]) {
+//
+//                    mec = tver[i];
+//                }
+//
+//            }
+//            if (tver[i] < mec) {
+//                poqr = tver[i];
+//            }
+//        }
+//
+//
+//        System.out.println(mec);
+//        System.out.println(poqr);
+
+
         Scanner in = new Scanner(System.in);
-        String input = in.next().toString();
+        List<Integer> masiv = new ArrayList <Integer>();
+    int input = in.nextInt();
 
+        for (int i = 0; i < input; i++) {
 
-        String input1 = input.replaceAll("fack","xxx");
-        System.out.println(input1);
+            Random r = new Random();
+                int out = r.nextInt(input);
+            masiv.add(out);
+        }
+
+        System.out.println(masiv);
 
     }
 
