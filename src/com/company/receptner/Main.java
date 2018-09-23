@@ -1,10 +1,5 @@
 package com.company.receptner;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -1699,20 +1694,36 @@ public class Main {
 //        System.out.println(mec);
 //        System.out.println(poqr);
 
+// mutqagrum em  N tiv, vor@ kazmum e masivi tveri qanak@ ev masivum
+// texadrum e minchev nshvac N tvi random tver, ev artacolum e ayn tver@
+// voronq bajanvum en k i aranc mnacord;
 
-        Scanner in = new Scanner(System.in);
-        List<Integer> masiv = new ArrayList <Integer>();
-    int input = in.nextInt();
-
-        for (int i = 0; i < input; i++) {
-
-            Random r = new Random();
-                int out = r.nextInt(input);
-            masiv.add(out);
-        }
-
-        System.out.println(masiv);
-
+//
+//        Scanner in = new Scanner(System.in);
+//        int k = 2;
+//        List<Integer> masiv = new ArrayList <Integer>();
+//    int input = in.nextInt();
+//
+//        for (int i = 0; i < input; i++) {
+//
+//            Random r = new Random();
+//                int out = r.nextInt(input);
+//            masiv.add(out);
+//        }
+//
+//
+//        for (int j = 0; j < masiv.size(); j++) {
+//
+//            if (masiv.get(j) % k == 0){
+//
+//                System.out.println(masiv.get(j));
+//
+//            }
+//
+//        }
+//
+//
+//        System.out.println(masiv);
     }
 
 
