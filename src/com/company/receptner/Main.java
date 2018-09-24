@@ -1,5 +1,7 @@
 package com.company.receptner;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -1721,11 +1723,183 @@ public class Main {
 //            }
 //
 //        }
+//        System.out.println(masiv);
+
+//        List<Integer> newMasiv = new ArrayList <Integer>();
+//        int sum = 0;
+//        Scanner in  = new Scanner(System.in);
 //
+//        System.out.println("MUTQAGREL MASIVI TARERI QANAK@");
+//        int input = in.nextInt();
+//
+//        System.out.println("MUTQAGREL MASIVI TARER@");
+//        for (int i = 0; i < input; i++) {
+//
+//            int masivinput = in.nextInt();
+//            newMasiv.add(masivinput);
+//
+//        }
+//        System.out.println(newMasiv);
+//        for (int j = 0; j < newMasiv.size(); j++) {
+//            for (int k = j +1 ; k < newMasiv.size()-j; k++) {
+//
+//                if (newMasiv.get(j) < newMasiv.get(k)){
+//                    sum += newMasiv.get(j);
+//                }
+//            }
+//
+//        }
+//
+//        System.out.println(sum);
+
+//        Scanner in = new Scanner(System.in);
+//        List<Integer> masiv = new ArrayList <Integer>();
+//        int sum = 0;
+//        for (int i = 0; i < 5; i++) {
+//            int input = in.nextInt();
+//            masiv.add(input);
+//        }
+//        for (int j = 0; j < masiv.size(); j++) {
+//
+//            for (int k = j +1 ; k < masiv.size()-j; k++) {
+//
+//                if ( masiv.get(j) > masiv.get(k) ){
+//
+//                    sum += 1;
+//
+//                }
+//
+//            }
+//
+//
+//        }
 //
 //        System.out.println(masiv);
+//        System.out.println(sum);
+
+//        Scanner in = new Scanner(System.in);
+//        List<Integer> masiv = new ArrayList <Integer>();
+//        int patasxan = 0;
+//        for (int i = 0; i < 10; i++) {
+//
+//            masiv.add(in.nextInt());
+//        }
+//
+//        for (int j = 0; j < masiv.size(); j++) {
+//
+//            for (int k = j + 1; k < masiv.size() - j; k++) {
+//
+//                if (masiv.get(j) > masiv.get(k)){
+//                    patasxan = masiv.get(j)* masiv.get(k);
+//
+//                }
+//
+//            }
+//        }
+//        System.out.println(masiv);
+//        System.out.println(patasxan);
+
+
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println("");
+//            for (int j = 0; j < 10 - i; j++) {
+//                System.out.print("x");
+//            }
+//        }
+
+//        Scanner in = new Scanner(System.in);
+//
+//        System.out.println("mutq 1");
+//        int mutq1 = in.nextInt();
+//        System.out.println("gorcoxutyun");
+//        char operation = in.next().charAt(0);
+//        System.out.println("mutq 2");
+//        int mutq2 = in.nextInt();
+//        int patasxan = 0;
+//
+//        switch (operation){
+//            case '+': patasxan =   (mutq1 + mutq2);
+//            break;
+//
+//            case '-': patasxan = (mutq1 - mutq2);
+//            break;
+//
+//            case  '*': patasxan = (mutq1 * mutq2);
+//            break;
+//        }
+//
+//        System.out.println(patasxan);
+
+
+        //Unsorted array
+        Integer[] a = { 2, 6, 3, 5, 1 };
+
+        //Call merge sort
+        mergeSort(a);
+
+        //Check the output which is sorted array
+        System.out.println(Arrays.toString(a));
+    }
+
+    @SuppressWarnings("rawtypes")
+    public static Comparable[] mergeSort(Comparable[] list)
+    {
+        //If list is empty; no need to do anything
+        if (list.length <= 1) {
+            return list;
+        }
+
+        //Split the array in half in two parts
+        Comparable[] first = new Comparable[list.length / 2];
+        Comparable[] second = new Comparable[list.length - first.length];
+        System.arraycopy(list, 0, first, 0, first.length);
+        System.arraycopy(list, first.length, second, 0, second.length);
+
+        //Sort each half recursively
+        mergeSort(first);
+        mergeSort(second);
+
+        //Merge both halves together, overwriting to original array
+        merge(first, second, list);
+        return list;
+    }
+
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+    private static void merge(Comparable[] first, Comparable[] second, Comparable[] result)
+    {
+        //Index Position in first array - starting with first element
+        int iFirst = 0;
+
+        //Index Position in second array - starting with first element
+        int iSecond = 0;
+
+        //Index Position in merged array - starting with first position
+        int iMerged = 0;
+
+        //Compare elements at iFirst and iSecond,
+        //and move smaller element at iMerged
+        while (iFirst < first.length && iSecond < second.length)
+        {
+            if (first[iFirst].compareTo(second[iSecond]) < 0)
+            {
+                result[iMerged] = first[iFirst];
+                iFirst++;
+            }
+            else
+            {
+                result[iMerged] = second[iSecond];
+                iSecond++;
+            }
+            iMerged++;
+        }
+        //copy remaining elements from both halves - each half will have already sorted elements
+        System.arraycopy(first, iFirst, result, iMerged, first.length - iFirst);
+        System.arraycopy(second, iSecond, result, iMerged, second.length - iSecond);
+
+
+        }
+
     }
 
 
 
-}
