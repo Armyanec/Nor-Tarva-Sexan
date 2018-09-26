@@ -1062,7 +1062,6 @@ public class Main {
 //        System.out.println(sum);
 
 
-
 // 58. ___________________________________________
 
 //    int n = 12321;
@@ -1120,11 +1119,6 @@ public class Main {
 //   }
 //
 //
-
-
-
-
-
 
 
 // 63. ___________________________________________
@@ -1265,7 +1259,7 @@ public class Main {
 //        System.out.println(barTasnavor+bar);
 
 
-   //___________________________
+        //___________________________
 //        Scanner x = new Scanner(System.in);
 //        int tiv = x.nextInt();
 //        if (tiv > 99) {
@@ -1475,7 +1469,7 @@ public class Main {
 //            }
 //        }
 
-   //     Напишите рекурсивный метод отображающий строку задом на перед
+        //     Напишите рекурсивный метод отображающий строку задом на перед
 
 //String masiv = "Aram";
 //
@@ -1980,73 +1974,78 @@ public class Main {
 //
 //        System.out.println(Arrays.toString(newMasiv));
 
+//_______________________________________________________________________________
+        int coffe = 10, sugar = 10;
+        int putting = 0;
+        int sugerBaton = 0;
+        int coffeBaton = 0;
 
-int coffe = 10, sugar = 10;
-int putting = 0;
-int sugerBaton = 0;
-int coffeBaton = 0;
-        if (coffe == 0){
-            System.out.println("coffe is Empty");
-            return;
-        }
+// coffe = 1 @ntrel coffe;
+// suger = 1 @ntrel suger
+// suger = 0 aranc suger
+
+        for (int i = coffe; i > 0; i--) {
+
+
 // payment input;
-        Scanner in = new Scanner(System.in);
-        System.out.println("pay");
-        int payment = in.nextInt();
+            Scanner in = new Scanner(System.in);
+            System.out.println("pay");
+            int payment = in.nextInt();
 
-         System.out.println("Coffe");
-          coffeBaton = in.nextInt();
+            System.out.println("Coffe");
+            coffeBaton = in.nextInt();
 
-        if (payment >= 100 && coffeBaton == 0){
-            System.out.println("putting\t" + payment);
-            return;
-        }
+            if (payment >= 100 && coffeBaton == 0) {
+                System.out.println("putting\t" + payment);
+                return;
+            }
 
-         if (payment > 100) {
-             System.out.println("suger");
-              sugerBaton = in.nextInt();
+            if (payment > 100) {
+                System.out.println("suger");
+                sugerBaton = in.nextInt();
             }
 
 //operation
 
 
-        if (payment == 100 && coffeBaton == 1){
-            coffe = coffe -1;
-            putting = 0;
-            System.out.println("one cup coffe\t" + "without sugar");
-            System.out.println("putting\t" + putting);
+            if (payment == 100 && coffeBaton == 1) {
+                coffe = coffe - 1;
+                putting = 0;
+                System.out.println("one cup coffe\t" + "without sugar");
+                System.out.println("putting\t" + putting);
 
 
+            }
+
+            if (payment > 100 && coffeBaton == 1 && sugerBaton == 1) {
+                putting = payment - 200;
+                coffe = coffe - 1;
+                sugar = sugar - 1;
+                System.out.println("one cup coffe\t" + "+" + " sugar");
+                System.out.println("putting\t" + putting);
+
+            } else if (payment > 100 && coffeBaton == 1 && sugerBaton == 0) {
+                putting = payment - 100;
+                coffe = coffe - 1;
+
+                System.out.println("one cup coffe\t" + "without sugar");
+                System.out.println("putting\t" + putting);
+
+            }
+
+
+            System.out.println("coffe/sugar MNACORT\t" + coffe + " " + sugar);
+
+            if (coffe == 0) {
+                System.out.println("coffe is Empty");
+                return;
+            }
 
         }
 
-        if (payment > 100 && coffeBaton == 1 && sugerBaton == 1){
-            putting  = payment -200;
-            coffe = coffe -1;
-            sugar = sugar - 1;
-            System.out.println("one cup coffe\t" + "+" + " sugar");
-            System.out.println("putting\t" + putting );
-
-        }
-        else if (payment > 100 && coffeBaton == 1 && sugerBaton == 0) {
-            putting = payment - 100;
-            coffe = coffe - 1;
-
-            System.out.println("one cup coffe\t" + "without sugar");
-            System.out.println("putting\t" + putting);
-
-        }
-
-
-
-
-
-
-
-        System.out.println("coffe/sugar MNACORT\t" + coffe + " " + sugar);
     }
 
-    }
+}
 
 
 
