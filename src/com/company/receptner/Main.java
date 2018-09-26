@@ -2011,8 +2011,12 @@ public class Main {
             if (payment == 100 && coffeBaton == 1) {
                 coffe = coffe - 1;
                 putting = 0;
-                System.out.println("one cup coffe\t" + "without sugar");
-                System.out.println("putting\t" + putting);
+
+                if (putting >= 0){
+                    System.out.println("one cup coffe\t" + "without sugar");
+                    System.out.println("putting\t" + putting);
+                }
+
 
 
             }
@@ -2021,15 +2025,19 @@ public class Main {
                 putting = payment - 200;
                 coffe = coffe - 1;
                 sugar = sugar - 1;
-                System.out.println("one cup coffe\t" + "+" + " sugar");
-                System.out.println("putting\t" + putting);
 
+                if (putting >= 0) {
+                    System.out.println("one cup coffe\t" + "+" + " sugar");
+                    System.out.println("putting\t" + putting);
+                }
             } else if (payment > 100 && coffeBaton == 1 && sugerBaton == 0) {
                 putting = payment - 100;
                 coffe = coffe - 1;
 
-                System.out.println("one cup coffe\t" + "without sugar");
-                System.out.println("putting\t" + putting);
+                if (putting >= 0) {
+                    System.out.println("one cup coffe\t" + "without sugar");
+                    System.out.println("putting\t" + putting);
+                }
 
             }
 
