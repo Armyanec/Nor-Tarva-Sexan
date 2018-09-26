@@ -1,6 +1,6 @@
 package com.company.receptner;
 
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -1830,74 +1830,221 @@ public class Main {
 //
 //        System.out.println(patasxan);
 
+//
+//        //Unsorted array
+//        Integer[] a = { 2, 6, 3, 5, 1 };
+//
+//        //Call merge sort
+//        mergeSort(a);
+//
+//        //Check the output which is sorted array
+//        System.out.println(Arrays.toString(a));
+//    }
+//
+//    @SuppressWarnings("rawtypes")
+//    public static Comparable[] mergeSort(Comparable[] list)
+//    {
+//        //If list is empty; no need to do anything
+//        if (list.length <= 1) {
+//            return list;
+//        }
+//
+//        //Split the array in half in two parts
+//        Comparable[] first = new Comparable[list.length / 2];
+//        Comparable[] second = new Comparable[list.length - first.length];
+//        System.arraycopy(list, 0, first, 0, first.length);
+//        System.arraycopy(list, first.length, second, 0, second.length);
+//
+//        //Sort each half recursively
+//        mergeSort(first);
+//        mergeSort(second);
+//
+//        //Merge both halves together, overwriting to original array
+//        merge(first, second, list);
+//        return list;
+//    }
+//
+//    @SuppressWarnings({ "rawtypes", "unchecked" })
+//    private static void merge(Comparable[] first, Comparable[] second, Comparable[] result)
+//    {
+//        //Index Position in first array - starting with first element
+//        int iFirst = 0;
+//
+//        //Index Position in second array - starting with first element
+//        int iSecond = 0;
+//
+//        //Index Position in merged array - starting with first position
+//        int iMerged = 0;
+//
+//        //Compare elements at iFirst and iSecond,
+//        //and move smaller element at iMerged
+//        while (iFirst < first.length && iSecond < second.length)
+//        {
+//            if (first[iFirst].compareTo(second[iSecond]) < 0)
+//            {
+//                result[iMerged] = first[iFirst];
+//                iFirst++;
+//            }
+//            else
+//            {
+//                result[iMerged] = second[iSecond];
+//                iSecond++;
+//            }
+//            iMerged++;
+//        }
+//        //copy remaining elements from both halves - each half will have already sorted elements
+//        System.arraycopy(first, iFirst, result, iMerged, first.length - iFirst);
+//        System.arraycopy(second, iSecond, result, iMerged, second.length - iSecond);
+//88
+//        int [] masiv = new int[5];
+//         masiv[0] = 4;
+//         masiv[1] = 3;
+//         masiv[2] = 1;
+//         masiv[3] = 2;
+//         masiv[4] = 5;
+//         int sum = 0;
+//        for (int i = 0; i < masiv.length; i++) {
+//
+//
+//                if (masiv[i] % 2 == 0){
+//                    sum += Math.pow(masiv[i],2);
+//                }
+//        }
+//
+//        System.out.println(sum);
 
-        //Unsorted array
-        Integer[] a = { 2, 6, 3, 5, 1 };
 
-        //Call merge sort
-        mergeSort(a);
+// 95.
+//        int [] masiv = {1,5,3,4,6,9,7,4};
+//        int sum = 0;
+//        int count = 0 ;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] % 3 == 0){
+//                count++;
+//                sum+=masiv[i];
+//            }
+//        }
+//        System.out.println(sum/count);
 
-        //Check the output which is sorted array
-        System.out.println(Arrays.toString(a));
-    }
+//103.
+//        int[] masiv = {1,5,3,5,8,9,10,7};
+//        int sum = 0;
+//        for (int i = 0; i <masiv.length ; i++) {
+//
+//            if ( (masiv[i] + i) % 3 == 0 ){
+//                sum += Math.pow(masiv[i], 2);
+//            }
+//
+//        }
+//        System.out.println(sum);
 
-    @SuppressWarnings("rawtypes")
-    public static Comparable[] mergeSort(Comparable[] list)
-    {
-        //If list is empty; no need to do anything
-        if (list.length <= 1) {
-            return list;
+//
+//
+//        int masiv[] = new int[10];
+//        int index = 0;
+//         masiv[index] = 0;
+//
+//        for (int i = 1; i < masiv.length; i++) {
+//                index++;
+//                masiv[index] = i;
+//
+//
+//        }
+//        System.out.println(Arrays.toString(masiv));
+
+////// 118.
+//        int masiv []= {1,5,-8,4,-7,9,-6,3};
+//        int count = 0;
+////
+//////        for (int i = 0; i < masiv.length; i++) {
+//        for (int i:masiv) {
+//
+//
+//        if (i > 0){
+//                count++;
+//
+//            }
+//        }
+//
+//
+//    int newMasiv[] = new int[count];
+//        int sum = 0;
+//
+//        for (int j :masiv ) {
+//            if (j > 0){
+//                newMasiv[sum] = j;
+//                sum++;
+//            }
+//        }
+//
+//        System.out.println(Arrays.toString(newMasiv));
+
+
+int coffe = 10, sugar = 10;
+int putting = 0;
+int sugerBaton = 0;
+int coffeBaton = 0;
+        if (coffe == 0){
+            System.out.println("coffe is Empty");
+            return;
+        }
+// payment input;
+        Scanner in = new Scanner(System.in);
+        System.out.println("pay");
+        int payment = in.nextInt();
+
+         System.out.println("Coffe");
+          coffeBaton = in.nextInt();
+
+        if (payment >= 100 && coffeBaton == 0){
+            System.out.println("putting\t" + payment);
+            return;
         }
 
-        //Split the array in half in two parts
-        Comparable[] first = new Comparable[list.length / 2];
-        Comparable[] second = new Comparable[list.length - first.length];
-        System.arraycopy(list, 0, first, 0, first.length);
-        System.arraycopy(list, first.length, second, 0, second.length);
-
-        //Sort each half recursively
-        mergeSort(first);
-        mergeSort(second);
-
-        //Merge both halves together, overwriting to original array
-        merge(first, second, list);
-        return list;
-    }
-
-    @SuppressWarnings({ "rawtypes", "unchecked" })
-    private static void merge(Comparable[] first, Comparable[] second, Comparable[] result)
-    {
-        //Index Position in first array - starting with first element
-        int iFirst = 0;
-
-        //Index Position in second array - starting with first element
-        int iSecond = 0;
-
-        //Index Position in merged array - starting with first position
-        int iMerged = 0;
-
-        //Compare elements at iFirst and iSecond,
-        //and move smaller element at iMerged
-        while (iFirst < first.length && iSecond < second.length)
-        {
-            if (first[iFirst].compareTo(second[iSecond]) < 0)
-            {
-                result[iMerged] = first[iFirst];
-                iFirst++;
+         if (payment > 100) {
+             System.out.println("suger");
+              sugerBaton = in.nextInt();
             }
-            else
-            {
-                result[iMerged] = second[iSecond];
-                iSecond++;
-            }
-            iMerged++;
-        }
-        //copy remaining elements from both halves - each half will have already sorted elements
-        System.arraycopy(first, iFirst, result, iMerged, first.length - iFirst);
-        System.arraycopy(second, iSecond, result, iMerged, second.length - iSecond);
+
+//operation
 
 
+        if (payment == 100 && coffeBaton == 1){
+            coffe = coffe -1;
+            putting = 0;
+            System.out.println("one cup coffe\t" + "without sugar");
+            System.out.println("putting\t" + putting);
+
+
+
         }
+
+        if (payment > 100 && coffeBaton == 1 && sugerBaton == 1){
+            putting  = payment -200;
+            coffe = coffe -1;
+            sugar = sugar - 1;
+            System.out.println("one cup coffe\t" + "+" + " sugar");
+            System.out.println("putting\t" + putting );
+
+        }
+        else if (payment > 100 && coffeBaton == 1 && sugerBaton == 0) {
+            putting = payment - 100;
+            coffe = coffe - 1;
+
+            System.out.println("one cup coffe\t" + "without sugar");
+            System.out.println("putting\t" + putting);
+
+        }
+
+
+
+
+
+
+
+        System.out.println("coffe/sugar MNACORT\t" + coffe + " " + sugar);
+    }
 
     }
 
