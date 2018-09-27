@@ -1,7 +1,5 @@
 package com.company.receptner;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -1975,82 +1973,212 @@ public class Main {
 //        System.out.println(Arrays.toString(newMasiv));
 
 //_______________________________________________________________________________
-        int coffe = 10, sugar = 10;
-        int putting = 0;
-        int sugerBaton = 0;
-        int coffeBaton = 0;
+//        int coffe = 10, sugar = 10;
+//        int putting = 0;
+//        int sugerBaton = 0;
+//        int coffeBaton = 0;
+//
+//// coffe = 1 @ntrel coffe;
+//// suger = 1 @ntrel suger
+//// suger = 0 aranc suger
+//
+//        for (int i = coffe; i > 0; i--) {
+//
+//
+//// payment input;
+//            Scanner in = new Scanner(System.in);
+//            System.out.println("pay");
+//            int payment = in.nextInt();
+//
+//            System.out.println("Coffe");
+//            coffeBaton = in.nextInt();
+//
+//            if (payment >= 100 && coffeBaton == 0) {
+//                System.out.println("putting\t" + payment);
+//                return;
+//            }
+//
+//            if (payment > 100) {
+//                System.out.println("suger");
+//                sugerBaton = in.nextInt();
+//            }
+//
+////operation
+//
+//
+//            if (payment == 100 && coffeBaton == 1) {
+//                coffe = coffe - 1;
+//                putting = 0;
+//
+//                if (putting >= 0) {
+//                    System.out.println("one cup coffe\t" + "without sugar");
+//                    System.out.println("putting\t" + putting);
+//                }
+//
+//
+//            }
+//
+//            if (payment > 100 && coffeBaton == 1 && sugerBaton == 1) {
+//                putting = payment - 200;
+//                coffe = coffe - 1;
+//                sugar = sugar - 1;
+//
+//                if (putting >= 0) {
+//                    System.out.println("one cup coffe\t" + "+" + " sugar");
+//                    System.out.println("putting\t" + putting);
+//                }
+//            } else if (payment > 100 && coffeBaton == 1 && sugerBaton == 0) {
+//                putting = payment - 100;
+//                coffe = coffe - 1;
+//
+//                if (putting >= 0) {
+//                    System.out.println("one cup coffe\t" + "without sugar");
+//                    System.out.println("putting\t" + putting);
+//                }
+//
+//            }
+//
+//
+//            System.out.println("coffe/sugar MNACORT\t" + coffe + " " + sugar);
+//
+//            if (coffe == 0) {
+//                System.out.println("coffe is Empty");
+//                return;
+//            }
+//
+//        }
 
-// coffe = 1 @ntrel coffe;
-// suger = 1 @ntrel suger
-// suger = 0 aranc suger
 
-        for (int i = coffe; i > 0; i--) {
-
-
-// payment input;
-            Scanner in = new Scanner(System.in);
-            System.out.println("pay");
-            int payment = in.nextInt();
-
-            System.out.println("Coffe");
-            coffeBaton = in.nextInt();
-
-            if (payment >= 100 && coffeBaton == 0) {
-                System.out.println("putting\t" + payment);
-                return;
-            }
-
-            if (payment > 100) {
-                System.out.println("suger");
-                sugerBaton = in.nextInt();
-            }
-
-//operation
+//119
+//int[] masiv = {1,49,21,8,15,64} ;
+//        int count = 0;
+//
+//        for (int i :masiv
+//             ) {
+//            if (i % 7 == 0) {
+//                count++;
+//            }
+//        }
+//        int[] newMasiv = new int[count];
+//        int index = 0;
+//        for (int j :masiv
+//             ) {
+//            if (j % 7 == 0){
+//                newMasiv[index] = j;
+//                index++;
+//            }
+//
+//        }
+//
+//        System.out.println(Arrays.toString(newMasiv));
 
 
-            if (payment == 100 && coffeBaton == 1) {
-                coffe = coffe - 1;
-                putting = 0;
+// 120.
 
-                if (putting >= 0){
-                    System.out.println("one cup coffe\t" + "without sugar");
-                    System.out.println("putting\t" + putting);
-                }
+//int[] masiv = {1,5,4,6,8,7,3,2};
+//int count = 0;
+//int a = 2;
+//int b = 6;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (i >= a && i <= b){
+//                count++;
+//            }
+//        }
+//
+//        int[] NewMasiv = new int[count];
+//        int index = 0;
+//
+//
+//        for (int j = 0; j < masiv.length; j++) {
+//
+//            if (j >= a && j <= b){
+//                NewMasiv[index] = masiv[j];
+//                index++;
+//            }
+//        }
+//        System.out.println(Arrays.toString(NewMasiv));
+
+//121
+
+//   float[] masiv = {1,2,5,6,7,9,3,4};
+//    int count = 0;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] % 2 != 0){
+//                count++;
+//            }
+//        }
+//
+//
+//        float[] NewMasiv = new float[count];
+//        int index = 0 ;
+//
+//
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (masiv[j] % 2 != 0) {
+//                NewMasiv[index] = masiv[j];
+//                index++;
+//            }
+//        }
+//        System.out.println(Arrays.toString(NewMasiv));
+
+//122.
+
+//           float[] masiv = {1,2,5,6,7,9,3,4};
+//    int count = 0;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] % 2 == 0){
+//                count++;
+//            }
+//        }
+//
+//
+//        float[] NewMasiv = new float[count];
+//        int index = 0 ;
+//
+//
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (masiv[j] % 2 == 0) {
+//                NewMasiv[index] = masiv[j];
+//                index++;
+//            }
+//        }
+//        System.out.println(Arrays.toString(NewMasiv));
 
 
+//123.
 
-            }
-
-            if (payment > 100 && coffeBaton == 1 && sugerBaton == 1) {
-                putting = payment - 200;
-                coffe = coffe - 1;
-                sugar = sugar - 1;
-
-                if (putting >= 0) {
-                    System.out.println("one cup coffe\t" + "+" + " sugar");
-                    System.out.println("putting\t" + putting);
-                }
-            } else if (payment > 100 && coffeBaton == 1 && sugerBaton == 0) {
-                putting = payment - 100;
-                coffe = coffe - 1;
-
-                if (putting >= 0) {
-                    System.out.println("one cup coffe\t" + "without sugar");
-                    System.out.println("putting\t" + putting);
-                }
-
-            }
-
-
-            System.out.println("coffe/sugar MNACORT\t" + coffe + " " + sugar);
-
-            if (coffe == 0) {
-                System.out.println("coffe is Empty");
-                return;
-            }
-
-        }
-
+//   int[] masiv = {1,2,5,6,16,9,3,4};
+//    int count = 0;
+//    int k = 7;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//
+//
+//                if (masiv[i] % k == 2) {
+//                    if (masiv[i] > 2) {
+//                        count++;
+//                    }
+//            }
+//
+//        }
+//        int[] NewMasiv = new int[count];
+//        int index = 0 ;
+//
+//
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (masiv[j] % k == 2) {
+//                if (masiv[j] != 2) {
+//
+//
+//                    NewMasiv[index] = masiv[j];
+//                    index++;
+//                }
+//            }
+//        }
+//        System.out.println(Arrays.toString(NewMasiv));
     }
 
 }
