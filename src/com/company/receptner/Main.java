@@ -2454,6 +2454,42 @@ public class Main {
 //
 //        }
 //        System.out.println(Arrays.toString(NewMasiv));
+
+//134.
+
+//int[] masiv = {1,5,8,9,7,5,3,4};
+//
+//// voroshel amenamec zuyg index unecox tar@
+//        int zuygMAX = masiv[0];
+//        int count = 0;
+//        int index = 0;
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] % 2 == 0 && masiv[i] > zuygMAX){
+//                zuygMAX  = masiv[i];
+//            }
+//        }
+//
+//
+//
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (masiv[j] % 2 != 0){
+//                count ++;
+//
+//
+//            }
+//        }
+//        int[] NewMas = new int[count];
+//
+//        for (int k:masiv ) {
+//            if (k % 2 != 0){
+//                NewMas[index] = k + zuygMAX;
+//                index++;
+//            }
+//
+//        }
+//
+//        System.out.println(Arrays.toString(NewMas));
+
     }
 }
 
