@@ -2179,6 +2179,204 @@ public class Main {
 //            }
 //        }
 //        System.out.println(Arrays.toString(NewMasiv));
+
+//124
+//    int [] masiv = {5,10,1,2,3,7,9,8,-5};
+//    int k = 3;
+//    int count = 0;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] > k){
+//                count++;
+//            }
+//        }
+//
+//        int[] Newmasiv = new int[count];
+//        int index = 0;
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (masiv[j] > k){
+//                Newmasiv[index] = masiv[j];
+//                index++;
+//            }
+//        }
+//
+//        System.out.println(Arrays.toString(Newmasiv));
+
+//125.
+
+//int masiv[] = {1,2,5,8,7,9,6,3};
+//    int count = 0;
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] % 2 == 0){
+//                count++;
+//            }
+//        }
+//    int New[] = new int[count];
+//        int index = 0;
+//        for (int j = 0; j < masiv.length; j++) {
+//
+//            if (masiv[j] % 2 == 0){
+//                New[index] = masiv[j];
+//                index++;
+//            }
+//        }
+//
+//        System.out.println(Arrays.toString(New));
+
+//126.
+//
+//   int[] masiv = {1,5,6,4,7,2,3,9,-4};
+//   int count = 0;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] % 2 != 0){
+//                count++;
+//            }
+//        }
+//        int NewMasiv[] = new int[count];
+//        int index = 0;
+//
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (masiv[j] % 2 != 0){
+//                NewMasiv[index] = masiv[j];
+//                index++;
+//
+//            }
+//        }
+//        System.out.println(Arrays.toString(NewMasiv));
+
+//127.
+
+//        int[] masiv = {2,1,8,6,3,7,5,2};
+//        int k = 10;
+//        int count = 0;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//
+//            if (Math.pow(masiv[i],2) > k ){
+//                count++;
+//            }
+//        }
+//        int NewMasiv[] = new int[count];
+//        int index = 0;
+//
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (Math.pow(masiv[j],2) > k ){
+//                NewMasiv[index] = masiv[j];
+//                index++;
+//            }
+//
+//        }
+//
+//        System.out.println(Arrays.toString(NewMasiv));
+
+
+//128.
+//int[] masiv = {1,5,-8,3,-7,12,2};
+//int count = 0;
+//int max = masiv[0];
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] > 0 ){
+//
+//                count++;
+//                if ( masiv[i] > max){
+//                    max = masiv[i];
+//                }
+//            }
+//        }
+//        int NewMasiv[] = new int[count];
+//        int index = 0;
+//
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (masiv[j] > 0){
+//                NewMasiv[index] = masiv[j] + max;
+//                index++;
+//            }
+//        }
+//        System.out.println(Arrays.toString(NewMasiv));
+
+//129.
+
+//int[] masiv = {-8,5,8,6,-7,-6,6,3};
+//
+//int newmasiv[] = new int[masiv.length/2];
+//       int index = 0;
+//
+//
+//        for (int i = 0; i < masiv.length; i+=2) {
+//   if (Math.abs(masiv[i]) > Math.abs(masiv[i + 1])) {
+//       newmasiv[index] = masiv[i];
+//       index++;
+//   }
+//              if (Math.abs(masiv[i]) < Math.abs(masiv[i + 1])){
+//                  newmasiv[index] = masiv[i + 1];
+//                  index++;
+//              }
+//            }
+//
+//
+//        System.out.println(Arrays.toString(newmasiv));
+
+//130
+//        int[] masiv = {8,11,9,8,8,8};
+//        int temp = 0;
+//        int index = 0;
+//
+//        int[] Newmasiv = new int[masiv.length];
+//
+//        for (int i = 0; i < masiv.length; i+=2) {
+//            if (masiv[i] % 2 == 0 && masiv[i + 1] % 2 != 0){
+//
+//                Newmasiv[index] = masiv[i + 1];
+//                Newmasiv[index +  1] = masiv[i];
+//                index++;
+//            }
+//            else if (masiv[i] % 2 != 0 || masiv[i + 1] % 2 == 0){
+//                Newmasiv[index] = masiv[i];
+//                Newmasiv[index +1] = masiv[i + 1];
+//                index++;
+//            }
+//
+//
+//            index++;
+//        }
+//
+//        System.out.println(Arrays.toString(Newmasiv));
+
+//131.
+//
+//        int[] masiv = {-1,2,-8,6,7,9,4,8};
+//
+//        int count = 0;
+//        int index = 0;
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i] > 0){
+//                count++;
+//            }
+//
+//        }
+//int NewMasiv[] = new int[masiv.length + count];
+//
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (masiv[j] > 0){
+//                NewMasiv[index] = masiv[j];
+//                NewMasiv[index + 1] = 0;
+//                index++;
+//            }
+//        else  {
+//            NewMasiv[index] = masiv[j];
+//
+//            }
+//        index++;
+//        }
+//        System.out.println(Arrays.toString(NewMasiv));
+
+//132
+
+
+
+
     }
 
 }
