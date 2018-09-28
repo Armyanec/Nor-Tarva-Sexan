@@ -1,5 +1,7 @@
 package com.company.receptner;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -2373,12 +2375,50 @@ public class Main {
 //        System.out.println(Arrays.toString(NewMasiv));
 
 //132
+        int[] masiv = {10, -2, 8, 4, -6, -4, 8, 9};
+        int b = 4;
+        int banali = 0;
+        int count1 = 0;
+        int count2 = 0;
+
+        for (int i = 0; i < masiv.length; i++) {
+            if (masiv[i] > 0) {
+                count1++;
+            }
+
+            if (masiv[i] < b && masiv[i] > 0) {
+                banali++;
+            }
+
+            if (masiv[i] < 0) {
+                count2++;
+            }
+
+        }
 
 
+        if (banali == 0) {
+            count1 = count2;
+        }
+
+        int NewMasiv[] = new int[count1];
+        int index = 0;
+
+        for (int j = 0; j < masiv.length; j++) {
+            if (banali > 0 && masiv[j] > 0) {
+                NewMasiv[index] = masiv[j];
+                index++;
+            }
+
+            if (banali == 0 && masiv[j] < 0) {
+                NewMasiv[index] = masiv[j];
+                index++;
+            }
+        }
 
 
+        System.out.println(Arrays.toString(NewMasiv));
     }
-
 }
 
 
