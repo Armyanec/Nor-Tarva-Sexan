@@ -2529,7 +2529,8 @@ public class Main {
         }
 
         System.out.println(Arrays.toString(NewMasiv));
-
+        index = 0;
+        count0 = countdr;
         for (int d : masiv) {
 
             if (d > 0) {
@@ -2539,9 +2540,12 @@ public class Main {
             }
         }
         System.out.println(Arrays.toString(NewMasiv));
-
+        index = 0;
+        count0 = countminus;
         for (int k : masiv) {
             if (k < 0) {
+
+
 
                 NewMasiv[index] = k;
                 index++;
