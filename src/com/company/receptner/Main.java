@@ -1,7 +1,5 @@
 package com.company.receptner;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -2494,7 +2492,7 @@ public class Main {
 //        System.out.println(Arrays.toString(NewMas));
 
 
-//135.
+//135.///////////////////////////////////////////////////////////////
 
 //        int masiv[] = {1, 0, 2, 0, -1, -5, -3, 8};
 //        int count0 = 0;
@@ -2585,46 +2583,105 @@ public class Main {
 
 //137
 
+//
+//
+//            int masiv[]= {5,6,8,2,1,8,3,6,4};
+//
+//            int Y[] = new int[masiv.length];
+//
+//
+//
+//            int max = masiv[0];
+//            int indexMax = 0;
+//            for(int i = 0; i< masiv.length; i++){
+//                if(masiv[i] > max){
+//                    max = masiv[i];
+//                    indexMax = i;
+//                }
+//            }
+//            int min = masiv[0];
+//            int indexMin = 0;
+//            for(int i = 0; i< masiv.length; i++){
+//                if(masiv[i] <= min){
+//                    min = masiv[i];
+//                    indexMin = i;
+//                }
+//            }
+//
+//            int j = 0;
+//            for(int i = 0; i < masiv.length; i++){
+//                if(i != indexMax && i != indexMin){
+//                    Y[j] = masiv[i];
+//                    j++;
+//                }
+//            }
+//
+//            for(int i = 0; i < j; i++){
+//                System.out.print(Y[i]+" ");
+//            }
 
-            int n = 7;
-            int X[]= new int[n];
+//        int masiv[]= {5,8,8,2,1,8,3,6,4};
+//
+//        int max = masiv[0];
+//        for (int i = 0; i < masiv.length; i++) {
+//            if (masiv[i]> max){
+//                max = masiv[i];
+//            }
+//
+//        }
+//
+//        int min = masiv[0];
+//        for (int j = 0; j < masiv.length; j++) {
+//            if (masiv[j] < min){
+//                min = masiv[j];
+//            }
+//        }
+//
+//    int count = 0;
+//        for (int h = 0; h < masiv.length; h++) {
+//            if (masiv[h] != min && masiv[h] != max){
+//                count++;
+//            }
+//        }
+//
+//        int NEWmasiv[] = new int[count];
+//        int index = 0;
+//        for (int k = 0; k < masiv.length; k++) {
+//            if (masiv[k] != min && masiv[k] != max){
+//                NEWmasiv[index] = masiv[k];
+//                index++;
+//            }
+//        }
+//
+//        System.out.println(Arrays.toString(NEWmasiv));
+//_________________________________________________________
+//        Scanner in = new Scanner(System.in);
+//
+//        System.out.println("mutqagreq tiv@");
+//        int input1 = in.nextInt();
+//        System.out.println("mutqagreq gorcopxutyun@");
+//        int operation = in.next().charAt(0);
+//        System.out.println("mutqagreq erkrord tiv@");
+//        int input2 = in.nextInt();
+//        int patasxan = 0;
+//
+//
+//        switch (operation){
+//
+//            case '+':patasxan =
+//                (input1 + input2);
+//            break;
+//            case '-':
+//                patasxan = (input1 - input2);
+//                break;
+//
+//
+//        }
+//
+//
+//        System.out.println(patasxan);
 
-            int Y[] = new int[n];
 
-            Scanner input = new Scanner(System.in);
-            System.out.println("Nermucel zangvaci "+n+" tarrery");
-            for(int i = 0; i < X.length; i++){
-                X[i]= input.nextInt();
-            }
-
-            int max = X[0];
-            int indexMax = 0;
-            for(int i = 0; i< n; i++){
-                if(X[i] > max){
-                    max = X[i];
-                    indexMax = i;
-                }
-            }
-            int min = X[0];
-            int indexMin = 0;
-            for(int i = 0; i< n; i++){
-                if(X[i] <= min){
-                    min = X[i];
-                    indexMin = i;
-                }
-            }
-
-            int j = 0;
-            for(int i = 0; i < n; i++){
-                if(i != indexMax && i != indexMin){
-                    Y[j] = X[i];
-                    j++;
-                }
-            }
-
-            for(int i = 0; i < j; i++){
-                System.out.print(Y[i]+" ");
-            }
 
 
 
