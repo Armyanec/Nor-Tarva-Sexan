@@ -2677,20 +2677,366 @@ public class Main {
 //
 //
 //        }
-//
+
 //
 //        System.out.println(patasxan);
+/////////ZANGVAC//////////////
+//int masiv[] = {4,5,6,8,2,1,6};
+//int start = 0;
+//int right = 0 + masiv.length/2;
+//int left = masiv.length - right;
+//int temp = 0;
+//
+//
+//int[] masiv1 = new int[right];
+//int[] masiv2 = new int[left];
+
+///////STRING//////////////
+
+        //138
+//  String str = "abcdabcdjhl";
+//  int count = 0;
+//        for (int i = 0; i < str.length(); i++) {
+//            if (str.charAt(i) == 'a'){
+//                count++;
+//            }
+//        }
+//
+//        System.out.println(count);
 
 
+//139
+//        String str = "AnnA";
+//        String str1 = "";
+//        for (int i = str.length()-1; i >=0; i--) {
+//            str1 += str.charAt(i);
+//        }
+//
+//        System.out.println(str.equals(str1));
 
+
+        //140
+// String str = "asodfxovbgobnokjhh";
+// int index = 0;
+// int x = str.indexOf('x');
+//
+
+//        for (int i = x; i < str.length(); i++) {
+//
+//            if (str.charAt(i) == 'o'){
+//                index ++;
+//            }
+//
+//        }
+//        System.out.println(index);
+
+
+//141
+
+//        String str = "aasdfgzedhfnfmdzjhfdk";
+//int index = 0;
+//        int a = str.indexOf('z');
+//        int b = str.lastIndexOf('z');
+//
+//        for (int i = a + 1; i < b; i++) {
+//            index++;
+//        }
+//        System.out.println(index);
+
+//142
+
+//String str = "asdfertarammmgg";
+//String str1 = "mghjgnghndhgmd;p";
+//int index = 0;
+//
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            for (int j = 0; j < str1.length(); j++) {
+//                if (str.charAt(i) == str1.charAt(j)){
+//                    index ++;
+//                }
+//
+//            }
+//        }
+//        System.out.println(index);
+
+//143
+//    String str = "asdaa"  ;
+//    String str2 = "";
+//    boolean t ;
+//
+//        for (int i = 0; i < str.length()-1; i++) {
+//           t = true;
+//            for (int j = 0; j < str.length(); j++) {
+//
+//                if (str.charAt(i) == str.charAt(j) && i != j){
+//                    t = false;
+//                    break;
+//                }
+//            }
+//        if (t == true){
+//            str2 += str.charAt(i);
+//        }
+//        }
+//        System.out.println(str2);
+
+
+// 144
+
+//      String str = "adsdfaghkjh";
+//      String str1 = "Aram";
+//      String tox = "";
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            for (int j = 0; j < str1.length(); j++) {
+//
+//                if (str.charAt(i) == str1.charAt(j)){
+//                   tox+=str.charAt(i);
+//                }
+//            }
+//        }
+//        System.out.println(tox);
+
+        //145
+//        String str = "dkjfahfdakgj";
+//        String tox = "";
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            if (str.charAt(i) == 'a'){
+//                tox += str.charAt(i + 1);
+//            }
+//        }
+//        System.out.println(tox);
+
+//146
+
+//String str = "asdsdfaddaaaf";
+//String tox = "";
+//
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            if (str.charAt(i) != 'a'){
+//                tox += str.charAt(i);
+//            }
+//        }
+//
+//        System.out.println(tox);
+
+
+        // 147.
+
+//  String str = "Aramaaaas";
+//  String tox = "";
+//
+//        for ( int i = str.length()-1; i >= 0; i-- ) {
+//
+//               tox += str.charAt(i);
+//
+//        }
+//
+//
+//        System.out.println(str);
+//        System.out.println(tox);
+
+
+        //148.
+
+// String str = "aasdfgxfghxtgggx";
+// String tox = "";
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            if (str.charAt(i) != 'x'){
+//                tox+=str.charAt(i);
+//            }
+//        else tox += "yy";
+//
+//        }
+//
+//        System.out.println(tox);
+
+
+        //149
+
+        //        String str = "amdfghjasdk";
+        //        String tox = "";
+        //
+        //
+        //
+        //        for (int i = 0; i < str.length()-1; i+=2) {
+        //            for (int j = i + 1; j < str.length(); j++) {
+        //                int x = str.charAt(i);
+        //                int y = str.charAt(j);
+        //
+        //                if (x < y ) {
+        //                    tox += str.charAt(i);
+        //                    break;
+        //
+        //                }
+        //            }
+        //        }
+        //        System.out.println(tox);
+
+
+//150
+//        String string1 = "c5dccf"; //length = n
+//int count = 0;
+//        boolean t = false;
+//
+//        for (int i = 0; i < string1.length(); i++) {
+//            if (string1.charAt(i) == 'x') {
+//                t = true;
+//                break;
+//            }
+//
+//
+//        }
+//
+//
+//        if (t){
+//            for (int j = 0; j < string1.length(); j++) {
+//                if (string1.charAt(j) == 'c'){
+//                    count ++;
+//                }
+//            }
+//        }
+//else{
+//            for (int k = 0; k < string1.length(); k++) {
+//                if (string1.charAt(k) == 'f'){
+//                    count++;
+//                }
+//            }
+//        }
+//
+//
+//        System.out.println(count);
+
+//151
+
+
+//String str = "hjkfhjlfjg";
+//String tex = "";
+//
+//        for (int i = 0; i < str.length(); i+=2) {
+//            tex += str.charAt(i);
+//            tex += 'a';
+//        }
+//
+//        System.out.println(tex);
+
+
+//152.
+//        String str = "asdgv45672";
+//        String tox = "";
+
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            char x = str.charAt(i);
+//            if ( str.indexOf(x) < str.indexOf('v')){
+//                tox += x;
+//            }
+//        }
+//
+//        System.out.println(tox);
+
+// TARBERAK 2.
+
+//        int x = str.indexOf('v');
+//        tox = str.substring(0,x);
+//        System.out.println(tox);
+
+
+////153
+//        String str = "aasddf6ghjjlk";
+//        int payman = 6;
+//        String tox = "";
+//
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            if (i > payman) {
+//                tox += str.charAt(i);
+//            }
+//
+//        }
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            if (i == payman) {
+//                tox += str.charAt(i);
+//            }
+//
+//        }
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            if (i < payman){
+//                tox += str.charAt(i);
+//            }
+//        }
+//        System.out.println(tox);
+
+  //TARBERAK 2
+
+//        tox += str.substring(payman +1,str.length());
+//        tox += str.charAt(payman);
+//        tox += str.substring(0,payman);
+//        System.out.println(tox);
+
+//154.
+//       String str = "asdfcccfghjk";
+//       int count = 0;
+//       int index = 0;
+//
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            if (str.charAt(i) == 'c'){
+//                count ++;
+//                index += i;
+//            }
+//
+//        }
+//        System.out.println(index/count);
+
+// 155.
+//        String str = "aaaasdddss";
+//        int countA = 0;
+//        String tox = "";
+//boolean t = false;
+////        for (int i = 0; i < str.length(); i++) {
+////            if (str.charAt(i) == 'a' && i == str.length()){
+////                countA = i;
+////            }
+////        }
+//        for (int i = 0; i < str.length(); i++) {
+//            if (str.charAt(i) == 's' && i == str.length()-1){
+//                t = true;
+//                break;
+//            }
+//
+//        }
+//
+//        if (t){
+//            for (int i = 0; i < str.length(); i++) {
+//                if (str.charAt(i) == 's'){
+//
+//                    countA ++;
+//                }
+//
+//            }
+//            System.out.println("S tareri qanak@");
+//        }
+//        else {
+//            for (int i = 0; i < str.length(); i++) {
+//                if (str.charAt(i) == 'd'){
+//
+//                    countA ++;
+//                }
+//
+//            }
+//            System.out.println("D tareri qanak@");
+//        }
+//        System.out.println(countA);
+
+
+ //156.
 
 
     }
-
-
 }
-
-
-
-
-
