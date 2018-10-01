@@ -3119,8 +3119,56 @@ public class Main {
 
 
 // 162
+//        Scanner in = new Scanner(System.in);
+//        System.out.println("mutqagrel hamar@");
+//        int num = in.nextInt();
+//
+//        if (num > 1000000 && num < 100000) {
+//            return;
+//        }
+//        String num1 = String.valueOf(num);
+//
+//
+//        String ab1 = "Anna vardanyan 260658";
+//        String ab2 = "Armen Gevorgyan 256487";
+//        String ab3 = "Lilit Gevorgyan 295454";
+//        String tox = "";
+//        boolean t;
+//        for (int i = 0; i < ab1.length(); i++) {
+//            t = false;
+//            if (ab1.contains(num1)) {
+//                tox += ab1.substring(0, ab1.length() - 6);
+//                break;
+//
+//            } else {
+//                ab1 = ab2;
+//                t = true;
+//
+//            }
+//
+//            if (t) {
+//
+//                if (ab2.contains(num1)) {
+//                    tox += ab2.substring(0, ab2.length() - 6);
+//                    break;
+//                } else {
+//                    ab1 = ab3;
+//
+//                }
+//
+//            }
+//            if (ab3.contains(num1)) {
+//                tox += ab3.substring(0, ab3.length() - 6);
+//                break;
+//
+//
+//            }
+//
+//        }
+//        System.out.println(tox);
 
 
+ //163
 
     }
 }
