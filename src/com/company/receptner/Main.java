@@ -3169,6 +3169,48 @@ public class Main {
 
 
  //163
+//String str = "asdfgYxYsdfgjkl";
+//String str2 = "aaaaa";
+//String tox = "";
+//
+//       tox =  (str.substring(0,str.indexOf('x')) + str2 + str.substring(str.indexOf('x')+1));
+//        System.out.println(tox);
+
+
+//164
+//String tox = "Hovakyan";
+//
+//boolean t;
+//t = tox.contains("yan");
+//        System.out.println(t);
+
+
+ //165
+//  String str = "aram Hovakyan" ;
+//  String tox = "";
+
+//        for (int i = 0; i < str.length(); i++) {
+//            if (str.charAt(i) == 'a'){
+//                tox += 'x';
+//
+//
+//            }
+//        else {
+//            tox += str.charAt(i);
+//            }
+//
+//        }
+//        System.out.println(tox);
+
+    // tarberak 2
+
+//        System.out.println(str.replace('a','x'));
+
+
+
+ //166
+
+
 
     }
 }
