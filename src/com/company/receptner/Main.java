@@ -3210,6 +3210,58 @@ public class Main {
 
  //166
 
+//String str = "Aramaaaasadmabdfkj ab";
+//
+//        System.out.println(str.replace("ab",""));
+//        System.out.println(str.replace('a','b'));
+//        System.out.println(str.replaceAll("Aram","sd"));
+
+//167
+//     String str = "Aa";
+//        System.out.println(str.codePointAt(1));
+
+//168
+
+//String str = "AaaaAaaajkjhfdflk";
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            if (str.codePointAt(i) == 65){
+//                System.out.println(str.charAt(i));
+//            }
+//        }
+
+//169
+//String str = "asdlkaAaghds";
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            if (str.codePointAt(i)  == 65){
+//                System.out.println(str.codePointAt(i-1) + " " + (int) str.charAt(i+1));
+//            }
+//        }
+
+//170
+//      int n = 5;
+//      int x = 0;
+//        for (char i = 'a'; i < 'z'; i++) {
+//            x++;
+//            if (x <= n){
+//                System.out.println(i);
+//            }
+//        }
+//      //______________________________
+//        int N = 15;
+//        for(char i = 'a'; i < 'a'+N; i++ )
+//            System.out.print(i +" ");
+
+   //171
+//int n = 5;
+//        for (char i = 'z' ; i > 'z' - n ; i--) {
+//            System.out.println(i);
+//
+//        }
+
+//172
+
 
 
     }
