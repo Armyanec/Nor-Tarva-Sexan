@@ -2972,7 +2972,7 @@ public class Main {
 //        }
 //        System.out.println(tox);
 
-  //TARBERAK 2
+        //TARBERAK 2
 
 //        tox += str.substring(payman +1,str.length());
 //        tox += str.charAt(payman);
@@ -3035,7 +3035,91 @@ public class Main {
 //        System.out.println(countA);
 
 
- //156.
+        //156.
+
+//  String str1 = "aaaaaaaaaaaaaaaa";
+//  String str2 = "bbbbbbbb";
+//  String tox = "";
+//
+//  int midlle = str1.length()/2;
+//  tox += str1.substring(0,midlle);
+//  tox += str2;
+//  tox += str1.substring(midlle);
+//        System.out.println(tox);
+
+        //158
+//  String str = "asdfzzfdszzzazza";
+//  int artadryal = 1;
+//  int gumar = 0;
+//
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            if (str.charAt(i) == 'z'){
+//                gumar += i;
+//                artadryal *= i;
+//            }
+//        }
+//        System.out.println( "gumar\t" + gumar + "\t\tartadryal\t"+ artadryal);
+//159
+//    String str = "0123456789";
+//
+//    String tox = "";
+//
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            if (i % 3 != 0 ){
+//                tox += str.charAt(i);
+//            }
+//        }
+//        System.out.println(tox);
+
+
+//160
+//        String str = "bafbbfabb";
+//        String tox = "";
+//        int count = 0;
+//
+//        for (int i = str.length() -1; i >=0; i--) {
+//            tox += str.charAt(i);
+//        }
+//
+//        if (str.equals(tox)) {
+//            for (int j = 0; j < str.length(); j++) {
+//                if (str.charAt(j) == 'a') {
+//                    count++;
+//                }
+//            }
+//        } else {
+//            for (int k = 0; k < str.length(); k++) {
+//                if (str.charAt(k) == 'b') {
+//                    count++;
+//                }
+//            }
+//        }
+//        System.out.println(count);
+
+
+//161
+//        String str = "asdfghjnfnvnefc ffnk";
+//        String tox = "";
+//
+//        for (int i = 1; i < str.length() - 1; i+=2) {
+//
+//            if ((int) str.charAt(i) < (int) str.charAt(i + 1)
+//                    && (int) str.charAt(i) > (int) str.charAt(i - 1)) {
+//                tox += str.charAt(i);
+//
+//                System.out.println( (int) str.charAt(i - 1) + " " +
+//                        (int) str.charAt(i) + " " +  (int) str.charAt(i + 1));
+//            }
+//
+//        }
+//
+//        System.out.println(tox);
+
+
+// 162
+
 
 
     }
