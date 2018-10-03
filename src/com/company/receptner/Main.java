@@ -2681,15 +2681,28 @@ public class Main {
 //
 //        System.out.println(patasxan);
 /////////ZANGVAC//////////////
-//int masiv[] = {4,5,6,8,2,1,6};
-//int start = 0;
-//int right = 0 + masiv.length/2;
-//int left = masiv.length - right;
-//int temp = 0;
+//int masiv[] = {8,1,3,4,5,6};
+//int right = 0;
+//int left = 0;
+//int[] masiv1 = new int[10];
+//int[] masiv2 = new int[10];
+//int x = 0;
+//int y = 0;
+//
+//        for (int i = 0; i <masiv.length ; i++) {
+//            for (int j = i+1; j < masiv.length; j++) {
+//
+//                if (masiv[i] > (x += masiv[j])){
+//                    System.out.println(x);
+//                    System.out.println(masiv[i]);
 //
 //
-//int[] masiv1 = new int[right];
-//int[] masiv2 = new int[left];
+//            }
+//            }
+
+
+//        }
+
 
 ///////STRING//////////////
 
@@ -3168,7 +3181,7 @@ public class Main {
 //        System.out.println(tox);
 
 
- //163
+        //163
 //String str = "asdfgYxYsdfgjkl";
 //String str2 = "aaaaa";
 //String tox = "";
@@ -3185,7 +3198,7 @@ public class Main {
 //        System.out.println(t);
 
 
- //165
+        //165
 //  String str = "aram Hovakyan" ;
 //  String tox = "";
 
@@ -3202,13 +3215,12 @@ public class Main {
 //        }
 //        System.out.println(tox);
 
-    // tarberak 2
+        // tarberak 2
 
 //        System.out.println(str.replace('a','x'));
 
 
-
- //166
+        //166
 
 //String str = "Aramaaaasadmabdfkj ab";
 //
@@ -3253,7 +3265,7 @@ public class Main {
 //        for(char i = 'a'; i < 'a'+N; i++ )
 //            System.out.print(i +" ");
 
-   //171
+        //171
 //int n = 5;
 //        for (char i = 'z' ; i > 'z' - n ; i--) {
 //            System.out.println(i);
@@ -3261,8 +3273,237 @@ public class Main {
 //        }
 
 //172
+//String tox = "a";
+//int a = 0;
+//
+//        for (int i = 0; i < tox.length(); i++) {
+//            if (tox.codePointAt(i) < 'a'){
+//                a = 1 ;
+//            }
+//
+//       if (tox.codePointAt(i) >= 'A' && tox.codePointAt(i) <= 'Z'){
+//           a = 2;
+//       }
+//
+//       else if (tox.codePointAt(i) >= 'a' && tox.codePointAt(i) <= 'z'){
+//           a = 3;
+//       }
+//
+//        }
+//
+//        System.out.println(a);
+
+
+//173
+
+//String str = "asdfA";
+//
+//        System.out.println(str.codePointAt(0) + " " + str.codePointAt(str.length()-1));
+
+//174
+//
+//        int x = 45;
+//        String str = "";
+//
+//        System.out.println(str += str.valueOf(x));
+
+
+//175
+//        int n = 10;
+//        char a = 'x';
+//        char b = 'y';
+//        String str = "";
+//
+//        for (int i = 0; i < n; i++) {
+//str += a;
+//str += b;
+//
+//        }
+//        System.out.println(str);
+
+
+        //176
+
+// String str = "asdfgh";
+// String tox = "";
+//
+// for (int i = 0; i < str.length(); i++) {
+//            tox += str.charAt(i);
+//            tox += " ";
+//        }
+//
+//        System.out.println(tox);
+
+
+//177
+
+//int n = 5;
+//String str = "asdfghjkl";
+//String tox =  "";
+//String ket = ";";
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            tox += str.charAt(i);
+//
+//            for (int j = 0; j < n; j++) {
+//            tox += ket;
+//
+//            }
+//        }
+//
+//        System.out.println(tox);
+
+//178
+//   String str = "asd123";
+//   int num = 0;
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            if (Character.isDigit(str.charAt(i))){
+//                num ++;
+//            }
+//        }
+//
+//        System.out.println(num); // patasxan 3
+
+//179
+//String str = "asdABCasd";
+//
+//int count = 0;
+//
+//        for (int i = 0; i < str.length(); i++) {
+//
+//
+//            if ((str.charAt(i)) <= 'Z' ){
+//                count++;
+//            }
+//
+//        }
+//
+//        System.out.println(count);
+//180
+//String str = "asddfgAABBNN";
+//String tox = "";
+//
+//
+//
+//            tox += str.toUpperCase();
+//
+//        System.out.println(tox);
+
+//181
+//
+//String str = "asdjhgftrgdANBHGFV";
+//String tox = "";
+//
+//tox += str.toLowerCase();
+//        System.out.println(tox);
+
+
+        //182
+//      String str = "1.2";
+//      String tox = "";
+//        int x = 0;
+//
+//        int t = 1;
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            if (str.charAt(i) < '0' && str.charAt(i) > '9' && str.charAt(i) != '.'){
+//                t = 3;
+//
+//            }
+//        }
+//        for (int i = 0; i < str.length(); i++) {
+//            if (str.charAt(i) == '.' && t == 1){
+//                t = 2;
+//            }
+//        }
+//        System.out.println(t);
+
+        //183
+//      int tiv = 123;
+//
+//        System.out.println(tiv%10 + " " + tiv/10%10 + " " + tiv/100 );
+
+//184
+//int tiv = 245;
+//        System.out.println(tiv%10 + tiv/10%10 + tiv/100);
+
+
+//        185
+//        String str = " 6 + 4 - 5 + 1 ";
+//        String tox = str.replace(" ", "");
+//
+//        int x = Integer.parseInt(Character.toString(tox.charAt(0)));
+//        for (int i = 1; i < tox.length(); i ++) {
+//
+//                if (tox.charAt(i) == '+') {
+//                    x += Integer.parseInt(Character.toString(tox.charAt(i+1)));
+//
+//                }
+//            if (tox.charAt(i) == '-') {
+//                    x -= Integer.parseInt(Character.toString(tox.charAt(i+1)));
+//
+//
+//            }
+//        }
+//
+//        System.out.println(x);
+
+//186
+//        String str = "asdfgXdfg";
+//        String str1 = "aaaaaaaa";
+//        String ttt = "";
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            if (str.charAt(i) == 'X') {
+//
+//                ttt += str.substring(0, i);
+//                ttt += str1;
+//                ttt += str.substring(i+1);
+//            }
+//        }
+//        System.out.println(ttt);
+
+
+//187
+//String str = "asdfAramasdfAram";
+//String tox = "Aram";
+//String tox1 = "";
+//int x = 0;
+//        for (int i = 0; i < str.length(); i++) {
+//
+//            tox1 += str.charAt(i);
+//            if (tox1.contains(tox)){
+//                x ++;
+//                tox1 = "";
+//            }
+//        }
+//        System.out.println(x);
+
+
+//189
+//String str = " a ";
+//
+//        System.out.println(str.trim());
+
+//190
+
+//    String str = " a b c d ";
+//    String x = "";
+//
+//    str = str.replaceAll(" ", "");
+//
+//        x += str.charAt(0);
+//        x += str.charAt(str.length()-1);
+//        System.out.println(x);
+
+
+//191
+
 
 
 
     }
+
+
 }
