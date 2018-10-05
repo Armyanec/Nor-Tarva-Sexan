@@ -3614,7 +3614,7 @@ public class Main {
             System.out.println("մուտքագրեք 'gmail/mail'");
             System.exit(0);
         }
-
+// toxi mshakman proces
         if (input.charAt(0) == '<') {
 
             itog += input.substring(input.indexOf(input.charAt(1)), input.indexOf('.')+1);
@@ -3633,7 +3633,6 @@ public class Main {
             if (hasce == 0) {
                 System.out.println("մուտքագրեք ճիշտ հասցե,");
             }
-
 
         }
 
