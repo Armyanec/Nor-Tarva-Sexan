@@ -1,5 +1,7 @@
 package com.company.receptner;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -3500,10 +3502,140 @@ public class Main {
 
 //191
 
+//String str = " asd    asd    asd         sdf djfh      fdkjlk   ";
+//String tox = "";
+//int x = 1;
+//        for (int i = 0; i < str.length(); i++) {
+//            str = str.replaceAll("  ", " ");
+//            str = str.trim();
+//
+//        if (str.charAt(i) == ' '){
+//            x ++;
+//
+//            }
+//        }
+//
+//
+//        System.out.println(x);
+
+//192
+
+//        String str = "Aram hsd   sddfg      gfgg  Aram     dsdc";
+//
+//        str = str.trim();
+//
+//
+//        int x = 1;
+//        for (int f = 0; f < str.length(); f++) {
+//            str = str.replaceAll("  ", " ");
+//        }
+//        String [] tox = str.split(" ");
+//
+//        for (int i = 0; i < tox.length; i++) {
+//            for (int j = i+1; j <tox.length; j++) {
+//
+//                if (tox[i].charAt(0) == (tox[j].charAt(0))){
+//                    x ++;
+//                }
+//
+//
+//            }
+//        }
+//
+//        System.out.println(x);
 
 
+        // <Aram@gmail.comkjjkhjkh
+        String[] comeri = {"com", "ru"};
+        String[] host = {"gmail", "mail"};
+        String itog = "";
+        String mimas = "";
+        int shnik = 0;
+        int ket = 0;
+        int comerii = 0;
+        int hosti = 0;
+        int hasce = 0;
+
+        boolean t = false;
+
+        Scanner in = new Scanner(System.in);
+        String input = in.next();
+
+        for (int i = 0; i < input.length(); i++) {
+// stugum enq @ nshan@
+            if (input.charAt(i) == '@') {
+                shnik++;
+                t = true;
+            }
+
+//stugum enq '.' nshan@
+            if (t) {
+                if (input.charAt(i) == '.') {
+                    ket++;
+
+                    for (int j = 0; j < host.length; j++) {
+
+                        if (input.substring(input.indexOf('@')+1, input.indexOf('.')).equals(host[j])
+                        ) {
+                            hosti++;
+                            break;
+                        }
+                    }
+                    for (int k = 0; k < comeri.length; k++) {
+
+                        if (input.substring(input.indexOf('.')).contains(comeri[k])) {
+                            comerii++;
+                            break;
+                        }
+                    }
+                    if (input.substring(input.indexOf('.')).contains("com")) {
+                        mimas = comeri[0];
+
+                    } else if (input.substring(input.indexOf('.')).contains("ru")) {
+                        mimas = comeri[1];
+                    }
+                }
+            }
+        }
+// error patasxanner
+        if (shnik == 0) {
+            System.out.println("մուտքագրեք '@'");
+            System.exit(0);
+        }
+        if (ket == 0) {
+            System.out.println("մուտքագրեք '.'");
+            System.exit(0);
+        }
+        if (comerii == 0) {
+            System.out.println("մուտքագրեք 'com/ru'");
+            System.exit(0);
+        }
+        if (hosti == 0) {
+            System.out.println("մուտքագրեք 'gmail/mail'");
+            System.exit(0);
+        }
+
+        if (input.charAt(0) == '<') {
+
+            itog += input.substring(input.indexOf(input.charAt(1)), input.indexOf('.')+1);
+            itog += mimas;
+
+            if (itog.substring(itog.indexOf('@')).equals("@gmail.com")) {
+                System.out.println(itog);
+                hasce++;
+
+            }
+
+            if (itog.substring(itog.indexOf('@')).equals("@mail.ru")) {
+                System.out.println(itog);
+                hasce++;
+            }
+            if (hasce == 0) {
+                System.out.println("մուտքագրեք ճիշտ հասցե,");
+            }
+
+
+        }
 
     }
-
-
 }
