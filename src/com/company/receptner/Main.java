@@ -3545,96 +3545,186 @@ public class Main {
 //        System.out.println(x);
 
 
-        // <Aram@gmail.comkjjkhjkh
-        String[] comeri = {"com", "ru"};
-        String[] host = {"gmail", "mail"};
-        String itog = "";
-        String mimas = "";
-        int shnik = 0;
-        int ket = 0;
-        int comerii = 0;
-        int hosti = 0;
-        int hasce = 0;
+//        // <Aram@gmail.comkjjkhjkh
+//        String[] comeri = {"com", "ru"};
+//        String[] host = {"gmail", "mail"};
+//        String itog = "";
+//        String mimas = "";
+//        int shnik = 0;
+//        int ket = 0;
+//        int comerii = 0;
+//        int hosti = 0;
+//        int hasce = 0;
+//
+//        boolean t = false;
+//
+//        Scanner in = new Scanner(System.in);
+//        String input = in.next();
+//
+//        for (int i = 0; i < input.length(); i++) {
+//// stugum enq @ nshan@
+//            if (input.charAt(i) == '@') {
+//                shnik++;
+//                t = true;
+//            }
+//
+////stugum enq '.' nshan@
+//            if (t) {
+//                if (input.charAt(i) == '.') {
+//                    ket++;
+//
+//                    for (int j = 0; j < host.length; j++) {
+//
+//                        if (input.substring(input.indexOf('@')+1, input.indexOf('.')).equals(host[j])
+//                        ) {
+//                            hosti++;
+//                            break;
+//                        }
+//                    }
+//                    for (int k = 0; k < comeri.length; k++) {
+//
+//                        if (input.substring(input.indexOf('.')).contains(comeri[k])) {
+//                            comerii++;
+//                            break;
+//                        }
+//                    }
+//                    if (input.substring(input.indexOf('.')).contains("com")) {
+//                        mimas = comeri[0];
+//
+//                    } else if (input.substring(input.indexOf('.')).contains("ru")) {
+//                        mimas = comeri[1];
+//                    }
+//                }
+//            }
+//        }
+//// error patasxanner
+//        if (shnik == 0) {
+//            System.out.println("մուտքագրեք '@'");
+//            System.exit(0);
+//        }
+//        if (ket == 0) {
+//            System.out.println("մուտքագրեք '.'");
+//            System.exit(0);
+//        }
+//        if (comerii == 0) {
+//            System.out.println("մուտքագրեք 'com/ru'");
+//            System.exit(0);
+//        }
+//        if (hosti == 0) {
+//            System.out.println("մուտքագրեք 'gmail/mail'");
+//            System.exit(0);
+//        }
+//// toxi mshakman proces
+//        if (input.charAt(0) == '<') {
+//
+//            itog += input.substring(input.indexOf(input.charAt(1)), input.indexOf('.')+1);
+//            itog += mimas;
+//
+//            if (itog.substring(itog.indexOf('@')).equals("@gmail.com")) {
+//                System.out.println(itog);
+//                hasce++;
+//
+//            }
+//
+//            if (itog.substring(itog.indexOf('@')).equals("@mail.ru")) {
+//                System.out.println(itog);
+//                hasce++;
+//            }
+//            if (hasce == 0) {
+//                System.out.println("մուտքագրեք ճիշտ հասցե,");
+//            }
+//
+//        }
 
-        boolean t = false;
+/////////////////FILTR////////////////////////
 
-        Scanner in = new Scanner(System.in);
-        String input = in.next();
+        ///բազա
+        String[] baza = {"ArmanHarutyunyan093939393",
+                "AnnaSerobyan099999999",
+                "VazgenDanielyan041414141",
+                "AramHovakyan003466393362"};
 
-        for (int i = 0; i < input.length(); i++) {
-// stugum enq @ nshan@
-            if (input.charAt(i) == '@') {
-                shnik++;
-                t = true;
+        String number = "";
+        String zro = "";
+
+        // Պատասխաններ
+
+        String vivacel = "**********Օպերատոր Վիվասել*************";
+        String beeline = "**********Օպերատոր Բիլայն**********";
+        String Orange = "**********Օպերատոր Օրանժ**********";
+        String Espana = "**********Օպերատոր Իսպանիա**********";
+
+        while (0 < 1) {
+            Scanner in = new Scanner(System.in);
+
+//            String input ="03466393362";
+
+            String input = in.next().toLowerCase();
+
+
+
+
+            if (input.charAt(0) == '+') {
+                System.out.println("Խնդրում ենք մուտքագրել 00");
+                System.exit(0);
             }
 
-//stugum enq '.' nshan@
-            if (t) {
-                if (input.charAt(i) == '.') {
-                    ket++;
+            for (int i = 0; i < baza.length; i++) {
 
-                    for (int j = 0; j < host.length; j++) {
 
-                        if (input.substring(input.indexOf('@')+1, input.indexOf('.')).equals(host[j])
-                        ) {
-                            hosti++;
-                            break;
+                for (String Newbaza : baza[i].split("0")) {
+
+// Stugum @st Anvan
+                    if ((input + "0" + Newbaza).equals(baza[i].toLowerCase())) {
+
+                        if ((input + "0" + Newbaza).matches("(.*)093(.*)")) {
+                            number = vivacel;
                         }
-                    }
-                    for (int k = 0; k < comeri.length; k++) {
-
-                        if (input.substring(input.indexOf('.')).contains(comeri[k])) {
-                            comerii++;
-                            break;
+                        if ((input + "0" + Newbaza).matches("(.*)099(.*)")) {
+                            number = beeline;
                         }
-                    }
-                    if (input.substring(input.indexOf('.')).contains("com")) {
-                        mimas = comeri[0];
+                        if ((input + "0" + Newbaza).matches("(.*)041(.*)")) {
+                            number = Orange;
+                        }
 
-                    } else if (input.substring(input.indexOf('.')).contains("ru")) {
-                        mimas = comeri[1];
+                        if ((input + "0" + Newbaza).matches("(.*)034(.*)")) {
+                            zro += "0";
+                            number = Espana;
+                        }
+                        System.out.println(number);
+                        System.out.println("\t\t\t0" + zro + Newbaza);
+                        System.out.println("\t\t\t" + input);
+
+
+                        //Stugum @st hamari
+                    } else if ((Newbaza + input).equals(baza[i])) {
+
+                        if ((input + "0" + Newbaza).matches("(.*)093(.*)")) {
+                            number = vivacel;
+                        }
+                        if ((input + "0" + Newbaza).matches("(.*)099(.*)")) {
+                            number = beeline;
+                        }
+                        if ((input + "0" + Newbaza).matches("(.*)041(.*)")) {
+                            number = Orange;
+                        }
+                        if ((input + "0" + Newbaza).matches("(.*)034(.*)")) {
+//                            zro+= "0";
+                            number = Espana;
+                        }
+                        System.out.println(number);
+                        System.out.println("\t\t\t" + Newbaza);
+                        System.out.println("\t\t\t" + zro + input);
                     }
+
+
                 }
-            }
-        }
-// error patasxanner
-        if (shnik == 0) {
-            System.out.println("մուտքագրեք '@'");
-            System.exit(0);
-        }
-        if (ket == 0) {
-            System.out.println("մուտքագրեք '.'");
-            System.exit(0);
-        }
-        if (comerii == 0) {
-            System.out.println("մուտքագրեք 'com/ru'");
-            System.exit(0);
-        }
-        if (hosti == 0) {
-            System.out.println("մուտքագրեք 'gmail/mail'");
-            System.exit(0);
-        }
-// toxi mshakman proces
-        if (input.charAt(0) == '<') {
 
-            itog += input.substring(input.indexOf(input.charAt(1)), input.indexOf('.')+1);
-            itog += mimas;
-
-            if (itog.substring(itog.indexOf('@')).equals("@gmail.com")) {
-                System.out.println(itog);
-                hasce++;
-
-            }
-
-            if (itog.substring(itog.indexOf('@')).equals("@mail.ru")) {
-                System.out.println(itog);
-                hasce++;
-            }
-            if (hasce == 0) {
-                System.out.println("մուտքագրեք ճիշտ հասցե,");
             }
 
         }
 
     }
 }
+
+
