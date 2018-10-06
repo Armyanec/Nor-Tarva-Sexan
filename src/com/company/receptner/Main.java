@@ -3756,98 +3756,104 @@ public class Main {
         String user1 = "aram";
         String password1 = "Aram123";
         int crash = 0;
+        int crash1 = 0;
+        int crash2 = 0;
 
         Scanner in = new Scanner(System.in);
-       while (crash < 3) {
-           System.out.println("Մուտքագրեք գաղտնաբառը");
+        while (crash < 3) {
+            System.out.println("Մուտքագրեք գաղտնաբառը");
 
-           System.out.println("user");
-           String user = in.next().toLowerCase();
-           System.out.println("password");
-           String password = in.next();
+            System.out.println("user");
+            String user = in.next().toLowerCase();
+            System.out.println("password");
+            String password = in.next();
 
 
-           if (user.equals(user1) && password.equals(password1)) {
+            if (user.equals(user1) && password.equals(password1)) {
 
-               while (0 < 3) {
-                   if (crash == BazaOperators.length){
-                       System.out.println("Տվյալները բացակայում են");
-                       System.out.println("------------------------");
-                   }
+                while (0 < 3) {
+                    if (crash1 == BazaOperators.length || crash2 == baza.length) {
+                        System.out.println("Տվյալները բացակայում են");
+                        System.out.println("------------------------");
+                    }
 
-                   System.out.println("Մուտքագրեք տվյալները հեռ/Ա․Ա");
-                   String input = in.next();
+                    System.out.println("Մուտքագրեք տվյալները հեռ/Ա․Ա");
+                    String input = in.next();
 
 
 //////Voronum ANUNOV
-                   for (int i = 0; i < baza.length; i++) {
-                       if (Character.isLetter(input.charAt(0))) {
+                    for (int i = 0; i < baza.length; i++) {
+                        if (Character.isLetter(input.charAt(0))) {
 
-                           if (baza[i].substring(0, input.length()).toUpperCase().equals(input.toUpperCase())) {
-                               name = input;
+                            if (baza[i].substring(0, input.length()).toUpperCase().equals(input.toUpperCase())) {
+                                name = input;
 
-                               number = baza[i].substring(name.length());
+                                number = baza[i].substring(name.length());
 
 
-                               for (int j = 0; j < BazaOperators.length; j++) {
+                                for (int j = 0; j < BazaOperators.length; j++) {
 
-                                   if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
-                                       zipcode = BazaOperators[j];
-                                   }
-                               }
+                                    if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
+                                        zipcode = BazaOperators[j];
+                                    }
+                                }
 
-                           }
-                      else {
-                          crash++;
-                           }
-                       }
+                            } else {
+                                crash1++;
+                            }
+                        }
 
 // voronum@ HAMAROV
-                       else if (Character.isDigit(input.charAt(0))) {
-                           if (baza[i].substring(baza[i].length() - input.length()).equals(input)) {
-                               number = input;
+                        else if (Character.isDigit(input.charAt(0))) {
+                            if (baza[i].substring(baza[i].length() - input.length()).equals(input)) {
+                                number = input;
 
-                               name = baza[i].substring(0, baza[i].length() - number.length());
-
-
-                               for (int j = 0; j < BazaOperators.length; j++) {
-
-                                   if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
-                                       zipcode = BazaOperators[j];
-                                   }
-                               }
-                           }
-                       }
-                   }
-
-                   if (zipcode == "093") {
-                       operator = viva;
-                   }
-                   if (zipcode == "091") {
-                       operator = Beeline;
-                   }
-                   if (zipcode == "041") {
-                       operator = orange;
-                   }
-                   if (zipcode == "0034") {
-                       operator = Espana;
-                   }
+                                name = baza[i].substring(0, baza[i].length() - number.length());
 
 
-                   System.out.println(operator);
-                   System.out.println("\t" + number);
-                   System.out.println("\t" + name.toUpperCase());
-                   System.out.println("------------------------");
+                                for (int j = 0; j < BazaOperators.length; j++) {
 
-               }
+                                    if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
+                                        zipcode = BazaOperators[j];
+                                    }
+                                }
+                            }
+                            else {
+                                crash2++;
+                            }
+                        }
 
 
-           }
-           if (user != (user1) || password != (password1)) {
-               System.out.println("Սխալ Անուն կամ գաղտնաբառ ");
-               crash++;
-           }
-       }
+                    }
+
+                    if (zipcode == "093") {
+                        operator = viva;
+                    }
+                    if (zipcode == "091") {
+                        operator = Beeline;
+                    }
+                    if (zipcode == "041") {
+                        operator = orange;
+                    }
+                    if (zipcode == "0034") {
+                        operator = Espana;
+                    }
+
+
+                    System.out.println(operator);
+                    System.out.println("\t" + number);
+                    System.out.println("\t" + name.toUpperCase());
+                    System.out.println("------------------------");
+
+                }
+
+
+            }
+            if (user != (user1) || password != (password1)) {
+                System.out.println("Սխալ Անուն կամ գաղտնաբառ ");
+                crash++;
+            }
+        }
     }
 }
 
