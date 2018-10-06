@@ -3638,92 +3638,216 @@ public class Main {
 
 /////////////////FILTR////////////////////////
 
-        ///բազա
-        String[] baza = {"ArmanHarutyunyan093939393",
-                "AnnaSerobyan099999999",
-                "VazgenDanielyan041414141",
-                "AramHovakyan003466393362"};
+//        ///բազա
+//        String[] baza = {"ArmanHarutyunyan093939393",
+//                "AnnaSerobyan099999999",
+//                "VazgenDanielyan041414141",
+//                "AramHovakyan003466393362"};
+//
+//        String number = "";
+//        String zro = "";
+//
+//        // Պատասխաններ
+//
+//        String vivacel = "**********Օպերատոր Վիվասել*************";
+//        String beeline = "**********Օպերատոր Բիլայն**********";
+//        String Orange = "**********Օպերատոր Օրանժ**********";
+//        String Espana = "**********Օպերատոր Իսպանիա**********";
+//
+//        while (0 < 1) {
+//            Scanner in = new Scanner(System.in);
+//
+////            String input ="AramHovakyan";
+//
+//            String input = in.next();
+//
+//
+//            if (input.charAt(0) == '+') {
+//                System.out.println("Խնդրում ենք մուտքագրել 00");
+//                System.exit(0);
+//            }
+//
+//            for (int i = 0; i < baza.length; i++) {
+//
+//
+//                for (String Newbaza : baza[i].split("0")) {
+//
+//// Stugum @st Anvan
+//                    if ((input + "0" + Newbaza).equals(baza[i])) {
+//
+//                        if ((input + "0" + Newbaza).matches("(.*)093(.*)")) {
+//                            number = vivacel;
+//                        }
+//                        if ((input + "0" + Newbaza).matches("(.*)099(.*)")) {
+//                            number = beeline;
+//                        }
+//                        if ((input + "0" + Newbaza).matches("(.*)041(.*)")) {
+//                            number = Orange;
+//                        }
+//
+//
+//                        System.out.println(number);
+//                        System.out.println("\t\t\t0" + Newbaza);
+//                        System.out.println("\t\t\t" + input);
+//
+//
+//                        //Stugum @st hamari
+//                    } else if ((Newbaza + input).equals(baza[i])) {
+//
+//                        if ((input + "0" + Newbaza).matches("(.*)093(.*)")) {
+//                            number = vivacel;
+//                        }
+//                        if ((input + "0" + Newbaza).matches("(.*)099(.*)")) {
+//                            number = beeline;
+//                        }
+//                        if ((input + "0" + Newbaza).matches("(.*)041(.*)")) {
+//                            number = Orange;
+//                        }
+//
+//                        System.out.println(number);
+//                        System.out.println("\t\t\t" + input);
+//                        System.out.println("\t\t\t" + Newbaza);
+//
+//
+//                    }
+//
+//                    //Artasahmanyan Operatorner
+//
+//
+////HAMAROV
+//                    if ((Newbaza + input).equals(baza[i]) && (input + "0" + Newbaza).matches("(.*)0034(.*)")) {
+//
+//
+//                            number = Espana;
+//
+//
+//                        System.out.println(number);
+//                        System.out.println("\t\t\t" + input);
+//                        System.out.println("\t\t\t" + Newbaza);
+//
+//
+//                        // // anvanumov
+//
+//                        }
+//                    }
+//
+//                }
+//
+//            }
 
+
+        //////NEW//////////Filtr///////////////////
+
+        String[] baza = {"AnnaHArutyunyan093656065",
+                "AramHovakyan091454545",
+                "VazgenGevorgyan041787878",
+                "GalustSahakyan0034454545"};
+
+        String[] BazaOperators = {"091", "093", "041", "0034"};
+
+        String viva = "***Operator Vivacell***";
+        String Beeline = "***Operator Beeline***";
+        String orange = "***Operator Orange***";
+        String Espana = "***Operator Espana***";
+        String operator = "";
         String number = "";
-        String zro = "";
+        String name = "";
+        String zipcode = "";
+        String user1 = "aram";
+        String password1 = "Aram123";
+        int crash = 0;
 
-        // Պատասխաններ
+        Scanner in = new Scanner(System.in);
+       while (crash < 3) {
+           System.out.println("Մուտքագրեք գաղտնաբառը");
 
-        String vivacel = "**********Օպերատոր Վիվասել*************";
-        String beeline = "**********Օպերատոր Բիլայն**********";
-        String Orange = "**********Օպերատոր Օրանժ**********";
-        String Espana = "**********Օպերատոր Իսպանիա**********";
-
-        while (0 < 1) {
-            Scanner in = new Scanner(System.in);
-
-//            String input ="03466393362";
-
-            String input = in.next().toLowerCase();
-
+           System.out.println("user");
+           String user = in.next().toLowerCase();
+           System.out.println("password");
+           String password = in.next();
 
 
+           if (user.equals(user1) && password.equals(password1)) {
 
-            if (input.charAt(0) == '+') {
-                System.out.println("Խնդրում ենք մուտքագրել 00");
-                System.exit(0);
-            }
+               while (0 < 3) {
+                   if (crash == BazaOperators.length){
+                       System.out.println("Տվյալները բացակայում են");
+                       System.out.println("------------------------");
+                   }
 
-            for (int i = 0; i < baza.length; i++) {
-
-
-                for (String Newbaza : baza[i].split("0")) {
-
-// Stugum @st Anvan
-                    if ((input + "0" + Newbaza).equals(baza[i].toLowerCase())) {
-
-                        if ((input + "0" + Newbaza).matches("(.*)093(.*)")) {
-                            number = vivacel;
-                        }
-                        if ((input + "0" + Newbaza).matches("(.*)099(.*)")) {
-                            number = beeline;
-                        }
-                        if ((input + "0" + Newbaza).matches("(.*)041(.*)")) {
-                            number = Orange;
-                        }
-
-                        if ((input + "0" + Newbaza).matches("(.*)034(.*)")) {
-                            zro += "0";
-                            number = Espana;
-                        }
-                        System.out.println(number);
-                        System.out.println("\t\t\t0" + zro + Newbaza);
-                        System.out.println("\t\t\t" + input);
+                   System.out.println("Մուտքագրեք տվյալները հեռ/Ա․Ա");
+                   String input = in.next();
 
 
-                        //Stugum @st hamari
-                    } else if ((Newbaza + input).equals(baza[i])) {
+//////Voronum ANUNOV
+                   for (int i = 0; i < baza.length; i++) {
+                       if (Character.isLetter(input.charAt(0))) {
 
-                        if ((input + "0" + Newbaza).matches("(.*)093(.*)")) {
-                            number = vivacel;
-                        }
-                        if ((input + "0" + Newbaza).matches("(.*)099(.*)")) {
-                            number = beeline;
-                        }
-                        if ((input + "0" + Newbaza).matches("(.*)041(.*)")) {
-                            number = Orange;
-                        }
-                        if ((input + "0" + Newbaza).matches("(.*)034(.*)")) {
-//                            zro+= "0";
-                            number = Espana;
-                        }
-                        System.out.println(number);
-                        System.out.println("\t\t\t" + Newbaza);
-                        System.out.println("\t\t\t" + zro + input);
-                    }
+                           if (baza[i].substring(0, input.length()).toUpperCase().equals(input.toUpperCase())) {
+                               name = input;
+
+                               number = baza[i].substring(name.length());
 
 
-                }
+                               for (int j = 0; j < BazaOperators.length; j++) {
 
-            }
+                                   if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
+                                       zipcode = BazaOperators[j];
+                                   }
+                               }
 
-        }
+                           }
+                      else {
+                          crash++;
+                           }
+                       }
 
+// voronum@ HAMAROV
+                       else if (Character.isDigit(input.charAt(0))) {
+                           if (baza[i].substring(baza[i].length() - input.length()).equals(input)) {
+                               number = input;
+
+                               name = baza[i].substring(0, baza[i].length() - number.length());
+
+
+                               for (int j = 0; j < BazaOperators.length; j++) {
+
+                                   if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
+                                       zipcode = BazaOperators[j];
+                                   }
+                               }
+                           }
+                       }
+                   }
+
+                   if (zipcode == "093") {
+                       operator = viva;
+                   }
+                   if (zipcode == "091") {
+                       operator = Beeline;
+                   }
+                   if (zipcode == "041") {
+                       operator = orange;
+                   }
+                   if (zipcode == "0034") {
+                       operator = Espana;
+                   }
+
+
+                   System.out.println(operator);
+                   System.out.println("\t" + number);
+                   System.out.println("\t" + name.toUpperCase());
+                   System.out.println("------------------------");
+
+               }
+
+
+           }
+           if (user != (user1) || password != (password1)) {
+               System.out.println("Սխալ Անուն կամ գաղտնաբառ ");
+               crash++;
+           }
+       }
     }
 }
 
