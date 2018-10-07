@@ -3772,10 +3772,10 @@ public class Main {
             if (user.equals(user1) && password.equals(password1)) {
 
                 while (0 < 3) {
-                    if (crash1 == BazaOperators.length || crash2 == baza.length) {
-                        System.out.println("Տվյալները բացակայում են");
-                        System.out.println("------------------------");
-                    }
+if (crash1 == baza.length || crash2 == BazaOperators.length){
+    System.out.println("Տվյալները բացակայում են");
+    System.out.println("------------------------");
+}
 
                     System.out.println("Մուտքագրեք տվյալները հեռ/Ա․Ա");
                     String input = in.next();
@@ -3818,8 +3818,7 @@ public class Main {
                                         zipcode = BazaOperators[j];
                                     }
                                 }
-                            }
-                            else {
+                            } else {
                                 crash2++;
                             }
                         }
@@ -3841,22 +3840,26 @@ public class Main {
                     }
 
 
-                    System.out.println(operator);
-                    System.out.println("\t" + number);
-                    System.out.println("\t" + name.toUpperCase());
-                    System.out.println("------------------------");
-                    operator ="";
-                    name = "";
-                    number= "";
-                }
-
-
+                System.out.println(operator);
+                System.out.println("\t" + number);
+                System.out.println("\t" + name.toUpperCase());
+                System.out.println("------------------------");
+                name = "";
+                number = "";
+                operator = "";
             }
+
+
+        }
+
+
             if (user != (user1) || password != (password1)) {
                 System.out.println("Սխալ Անուն կամ գաղտնաբառ ");
                 crash++;
             }
+
         }
+
     }
 }
 
