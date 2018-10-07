@@ -3800,6 +3800,7 @@ public class Main {
 
                             } else {
                                 crash1++;
+
                             }
                         }
 
@@ -3844,7 +3845,9 @@ public class Main {
                     System.out.println("\t" + number);
                     System.out.println("\t" + name.toUpperCase());
                     System.out.println("------------------------");
-
+                    operator ="";
+                    name = "";
+                    number= "";
                 }
 
 
