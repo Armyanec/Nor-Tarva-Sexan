@@ -3741,7 +3741,8 @@ public class Main {
         String[] baza = {"AnnaHArutyunyan093656065",
                 "AramHovakyan091454545",
                 "VazgenGevorgyan041787878",
-                "GalustSahakyan0034454545"};
+                "GalustSahakyan0034454545",
+                "MartikIsunc093969696"};
 
         String[] BazaOperators = {"091", "093", "041", "0034"};
 
@@ -3753,6 +3754,7 @@ public class Main {
         String number = "";
         String name = "";
         String zipcode = "";
+        String namer = "";
         String user1 = "aram";
         String password1 = "Aram123";
         int crash = 0;
@@ -3772,10 +3774,13 @@ public class Main {
             if (user.equals(user1) && password.equals(password1)) {
 
                 while (0 < 3) {
-if (crash1 == baza.length || crash2 == BazaOperators.length){
-    System.out.println("Տվյալները բացակայում են");
-    System.out.println("------------------------");
-}
+                    if (crash1 == baza.length || crash2 == BazaOperators.length) {
+                        System.out.println("Տվյալները բացակայում են");
+                        System.out.println("------------------------");
+                        System.out.println("");
+                        crash1 = 0;
+                        crash2 = 0;
+                    }
 
                     System.out.println("Մուտքագրեք տվյալները հեռ/Ա․Ա");
                     String input = in.next();
@@ -3798,69 +3803,277 @@ if (crash1 == baza.length || crash2 == BazaOperators.length){
                                     }
                                 }
 
-                            } else {
+                            }
+ else {
                                 crash1++;
 
                             }
-                        }
+                            }
+
 
 // voronum@ HAMAROV
-                        else if (Character.isDigit(input.charAt(0))) {
-                            if (baza[i].substring(baza[i].length() - input.length()).equals(input)) {
-                                number = input;
+                            else if (Character.isDigit(input.charAt(0))) {
+                                if (baza[i].substring(baza[i].length() - input.length()).equals(input)) {
+                                    number = input;
 
-                                name = baza[i].substring(0, baza[i].length() - number.length());
+                                    name = baza[i].substring(0, baza[i].length() - number.length());
 
 
-                                for (int j = 0; j < BazaOperators.length; j++) {
+                                    for (int j = 0; j < BazaOperators.length; j++) {
 
-                                    if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
-                                        zipcode = BazaOperators[j];
+                                        if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
+                                            zipcode = BazaOperators[j];
+                                        }
                                     }
                                 }
-                            } else {
-                                crash2++;
+
                             }
+                        else {
+                            crash2++;
+                        }
+
+                        }
+
+                        if (zipcode == "093") {
+                            operator = viva;
+                        }
+                        if (zipcode == "091") {
+                            operator = Beeline;
+                        }
+                        if (zipcode == "041") {
+                            operator = orange;
+                        }
+                        if (zipcode == "0034") {
+                            operator = Espana;
                         }
 
 
-                    }
-
-                    if (zipcode == "093") {
-                        operator = viva;
-                    }
-                    if (zipcode == "091") {
-                        operator = Beeline;
-                    }
-                    if (zipcode == "041") {
-                        operator = orange;
-                    }
-                    if (zipcode == "0034") {
-                        operator = Espana;
+                        System.out.println(operator);
+                        System.out.println("\t" + number);
+                        System.out.println("\t" + name.toUpperCase());
+                        System.out.println("------------------------");
+                        name = "";
+                        number = "";
+                        operator = "";
                     }
 
 
-                System.out.println(operator);
-                System.out.println("\t" + number);
-                System.out.println("\t" + name.toUpperCase());
-                System.out.println("------------------------");
-                name = "";
-                number = "";
-                operator = "";
+                }
+
+
+                if (user != (user1) || password != (password1)) {
+                    System.out.println("Սխալ Անուն կամ գաղտնաբառ ");
+                    crash++;
+                }
+
             }
+
+            //192
+
+//        String str = "Aram  Anna  Alen Anna Anna gago  galust  ";
+//        String[] masiv = new String[str.length()];
+//        str = str.trim();
+//        int count = 0;
+//
+//        for (int i = 0; i < str.length(); i++) {
+//            str = str.replaceAll("  ", " ");
+//        }
+//    masiv = str.split(" ");
+//
+//
+//
+//        for (int i = 0; i < masiv.length; i++) {
+//            boolean t = false;
+//            for (int j = i+1; j < masiv.length; j++) {
+//                if (masiv[i].charAt(0) == masiv[j].charAt(0)){
+//t = true;
+//
+//                }
+//            }
+//        if (t){
+//            count++;
+//        }
+//        }
+//
+//        System.out.println(count);
+
+//193
+
+//   String str = "    Anna   ABo Ara Aram ";
+//   str.trim();
+//int count = 0;
+//        for (int i = 0; i <str.length() ; i++) {
+//
+//            str = str.replaceAll("  ", " ");
+//        }
+//
+//        String[] str1 = str.split(" ");
+//
+//        for (int i = 0; i < str1.length; i++) {
+//
+//
+//                if (str1[i].contains("B")){
+//
+//                    for (int k = 0; k < str1[i].length(); k++) {
+//                        count ++;
+//                    }
+//
+//
+//            }
+//
+//        }
+//        System.out.println(count);
+
+
+//195
+
+//        String str = "   Aram Anna Arpine  ";
+//
+//        str = str.trim();
+//
+//        int count1 = 0;
+//        String[] tox = new String[str.length()];
+//
+//        for (int i = 0; i < tox.length; i++) {
+//            str = str.replaceAll("  ", " ");
+//        }
+//
+//
+//        tox = str.split(" ");
+//        count1 = tox[0].length();
+//
+//
+//        for (int k = 0; k < tox.length; k++) {
+//            int count = 0;
+//
+//            for (int i = 0; i < tox[k].length(); i++) {
+//                count++;
+//            }
+//            if (count1 < count) {
+//                count1 = count;
+//
+//            }
+//        }
+//
+//        System.out.println(count1);
+
+
+//197
+//
+//        String str = "asd  dfg kjh ";
+//        String newtox = "";
+//        String[] tox = new String[str.length()];
+//        str = str.trim();
+//
+//        for (int i = 0; i < str.length(); i++) {
+//        str = str.replaceAll("  "," ");
+//        }
+//tox = str.split(" ");
+//
+//        for (int i = 0; i < tox.length; i++) {
+//
+//newtox += tox[i].substring(0,1).toUpperCase()+ tox[i].substring(1,tox[i].length())+ " ";
+//        }
+//        System.out.println(newtox);
+//
+
+            //200
+
+//        String file = "file:///C:/Users/Aram/Desktop/Books/IT-Home/IT-Home's%20workbook.pdf ";
+//        String tex = "";
+//
+//        tex = file.substring(file.lastIndexOf('/')+1);
+//
+//        System.out.println(tex);
+
+
+//203
+//        String file = "C:/Users/Aram";
+//        int count = 0;
+//        for (int i = 0; i < file.length(); i++) {
+//            if (file.charAt(i) == '/'){
+//                count++;
+//            }
+//        }
+//if (count == 2){
+//    file = file.substring(file.indexOf('/')+1,file.lastIndexOf('/'));
+//}
+//else {
+//    file = file.substring(file.indexOf('/'),file.indexOf('/')+1);
+//}
+//        System.out.println(file);
+
+
+            //205
+
+
+//
+//        String str = "1abcd45ujk";
+//        str = str.replaceAll("[^a-z]", "");
+//        System.out.println(str);
+//        char[] strchar = str.toCharArray();
+//        for (int i = 0; i < str.length(); i++) {
+//            for (int j = 0; j < str.length() - 1; j++) {
+//                if (String.valueOf(strchar[i]).compareTo(String.valueOf((strchar[j]))) < 0) {
+//                    char temp = strchar[i];
+//                    strchar[i] = strchar[j];
+//                    strchar[j] = temp;
+//
+//                }
+//
+//
+//            }
+//
+//
+//        }
+//        int j;
+//        for (j = 0; j < str.length(); j++) {
+//            if (strchar[j] != str.charAt(j)) {
+//                System.out.println(str.charAt(j));
+//                j = -1;
+//                break;
+//            }
+//        }
+//        if (j > 0)
+//            System.out.println("1");
+//        String b = new String(strchar);
+//        System.out.println(b);
+
+//String baza = "Hovakyan0000 Sahakyan1111 Isunc4444";
+//String[] newBaza = baza.split(" ");
+//String name = "";
+//String nume = "";
+//        Scanner in = new Scanner(System.in);
+//        String input = "yan";
+//
+//        if (input.length() == 3) {
+//            for (int i = 0; i < newBaza.length; i++) {
+//                for (int j = 0; j < newBaza[i].length(); j++) {
+//                    if (newBaza[i].toUpperCase().charAt(j) >= 'A' && newBaza[i].toUpperCase().charAt(j) <= 'z') {
+//                        name += newBaza[i].charAt(j);
+//
+//                    }
+//
+//                }
+//
+//                if (input.equals(name.substring(name.length() - 3))) {
+//
+//                    System.out.println(name);
+//                    nume = (newBaza[i].substring(name.length()));
+//                    System.out.println(nume);
+//                    name = "";
+//                    nume = "";
+//
+//
+//                }
+//
+//            }
+//
+//        }
+//
 
 
         }
-
-
-            if (user != (user1) || password != (password1)) {
-                System.out.println("Սխալ Անուն կամ գաղտնաբառ ");
-                crash++;
-            }
-
-        }
-
     }
-}
 
 
