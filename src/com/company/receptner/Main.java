@@ -1,7 +1,5 @@
 package com.company.receptner;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -3738,135 +3736,135 @@ public class Main {
 
         //////NEW//////////Filtr///////////////////
 
-        String[] baza = {"AnnaHArutyunyan093656065",
-                "AramHovakyan091454545",
-                "VazgenGevorgyan041787878",
-                "GalustSahakyan0034454545",
-                "MartikIsunc093969696"};
-
-        String[] BazaOperators = {"091", "093", "041", "0034"};
-
-        String viva = "***Operator Vivacell***";
-        String Beeline = "***Operator Beeline***";
-        String orange = "***Operator Orange***";
-        String Espana = "***Operator Espana***";
-        String operator = "";
-        String number = "";
-        String name = "";
-        String zipcode = "";
-        String namer = "";
-        String user1 = "aram";
-        String password1 = "Aram123";
-        int crash = 0;
-        int crash1 = 0;
-        int crash2 = 0;
-
-        Scanner in = new Scanner(System.in);
-        while (crash < 3) {
-            System.out.println("Մուտքագրեք գաղտնաբառը");
-
-            System.out.println("user");
-            String user = in.next().toLowerCase();
-            System.out.println("password");
-            String password = in.next();
-
-
-            if (user.equals(user1) && password.equals(password1)) {
-
-                while (0 < 3) {
-                    if (crash1 == baza.length || crash2 == BazaOperators.length) {
-                        System.out.println("Տվյալները բացակայում են");
-                        System.out.println("------------------------");
-                        System.out.println("");
-                        crash1 = 0;
-                        crash2 = 0;
-                    }
-
-                    System.out.println("Մուտքագրեք տվյալները հեռ/Ա․Ա");
-                    String input = in.next();
-
-
-//////Voronum ANUNOV
-                    for (int i = 0; i < baza.length; i++) {
-                        if (Character.isLetter(input.charAt(0))) {
-
-                            if (baza[i].substring(0, input.length()).toUpperCase().equals(input.toUpperCase())) {
-                                name = input;
-
-                                number = baza[i].substring(name.length());
-
-
-                                for (int j = 0; j < BazaOperators.length; j++) {
-
-                                    if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
-                                        zipcode = BazaOperators[j];
-                                    }
-                                }
-
-                            }
- else {
-                                crash1++;
-
-                            }
-                            }
-
-
-// voronum@ HAMAROV
-                            else if (Character.isDigit(input.charAt(0))) {
-                                if (baza[i].substring(baza[i].length() - input.length()).equals(input)) {
-                                    number = input;
-
-                                    name = baza[i].substring(0, baza[i].length() - number.length());
-
-
-                                    for (int j = 0; j < BazaOperators.length; j++) {
-
-                                        if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
-                                            zipcode = BazaOperators[j];
-                                        }
-                                    }
-                                }
-
-                            }
-                        else {
-                            crash2++;
-                        }
-
-                        }
-
-                        if (zipcode == "093") {
-                            operator = viva;
-                        }
-                        if (zipcode == "091") {
-                            operator = Beeline;
-                        }
-                        if (zipcode == "041") {
-                            operator = orange;
-                        }
-                        if (zipcode == "0034") {
-                            operator = Espana;
-                        }
-
-
-                        System.out.println(operator);
-                        System.out.println("\t" + number);
-                        System.out.println("\t" + name.toUpperCase());
-                        System.out.println("------------------------");
-                        name = "";
-                        number = "";
-                        operator = "";
-                    }
-
-
-                }
-
-
-                if (user != (user1) || password != (password1)) {
-                    System.out.println("Սխալ Անուն կամ գաղտնաբառ ");
-                    crash++;
-                }
-
-            }
+//        String[] baza = {"AnnaHArutyunyan093656065",
+//                "AramHovakyan091454545",
+//                "VazgenGevorgyan041787878",
+//                "GalustSahakyan0034454545",
+//                "MartikIsunc093969696"};
+//
+//        String[] BazaOperators = {"091", "093", "041", "0034"};
+//
+//        String viva = "***Operator Vivacell***";
+//        String Beeline = "***Operator Beeline***";
+//        String orange = "***Operator Orange***";
+//        String Espana = "***Operator Espana***";
+//        String operator = "";
+//        String number = "";
+//        String name = "";
+//        String zipcode = "";
+//        String namer = "";
+//        String user1 = "aram";
+//        String password1 = "Aram123";
+//        int crash = 0;
+//        int crash1 = 0;
+//        int crash2 = 0;
+//
+//        Scanner in = new Scanner(System.in);
+//        while (crash < 3) {
+//            System.out.println("Մուտքագրեք գաղտնաբառը");
+//
+//            System.out.println("user");
+//            String user = in.next().toLowerCase();
+//            System.out.println("password");
+//            String password = in.next();
+//
+//
+//            if (user.equals(user1) && password.equals(password1)) {
+//
+//                while (0 < 3) {
+//                    if (crash1 == baza.length || crash2 == BazaOperators.length) {
+//                        System.out.println("Տվյալները բացակայում են");
+//                        System.out.println("------------------------");
+//                        System.out.println("");
+//                        crash1 = 0;
+//                        crash2 = 0;
+//                    }
+//
+//                    System.out.println("Մուտքագրեք տվյալները հեռ/Ա․Ա");
+//                    String input = in.next();
+//
+//
+////////Voronum ANUNOV
+//                    for (int i = 0; i < baza.length; i++) {
+//                        if (Character.isLetter(input.charAt(0))) {
+//
+//                            if (baza[i].substring(0, input.length()).toUpperCase().equals(input.toUpperCase())) {
+//                                name = input;
+//
+//                                number = baza[i].substring(name.length());
+//
+//
+//                                for (int j = 0; j < BazaOperators.length; j++) {
+//
+//                                    if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
+//                                        zipcode = BazaOperators[j];
+//                                    }
+//                                }
+//
+//                            }
+// else {
+//                                crash1++;
+//
+//                            }
+//                            }
+//
+//
+//// voronum@ HAMAROV
+//                            else if (Character.isDigit(input.charAt(0))) {
+//                                if (baza[i].substring(baza[i].length() - input.length()).equals(input)) {
+//                                    number = input;
+//
+//                                    name = baza[i].substring(0, baza[i].length() - number.length());
+//
+//
+//                                    for (int j = 0; j < BazaOperators.length; j++) {
+//
+//                                        if ((number.substring(0, BazaOperators[j].length())).equals(BazaOperators[j])) {
+//                                            zipcode = BazaOperators[j];
+//                                        }
+//                                    }
+//                                }
+//
+//                            }
+//                        else {
+//                            crash2++;
+//                        }
+//
+//                        }
+//
+//                        if (zipcode == "093") {
+//                            operator = viva;
+//                        }
+//                        if (zipcode == "091") {
+//                            operator = Beeline;
+//                        }
+//                        if (zipcode == "041") {
+//                            operator = orange;
+//                        }
+//                        if (zipcode == "0034") {
+//                            operator = Espana;
+//                        }
+//
+//
+//                        System.out.println(operator);
+//                        System.out.println("\t" + number);
+//                        System.out.println("\t" + name.toUpperCase());
+//                        System.out.println("------------------------");
+//                        name = "";
+//                        number = "";
+//                        operator = "";
+//                    }
+//
+//
+//                }
+//
+//
+//                if (user != (user1) || password != (password1)) {
+//                    System.out.println("Սխալ Անուն կամ գաղտնաբառ ");
+//                    crash++;
+//                }
+//
+//            }
 
             //192
 
@@ -4072,6 +4070,52 @@ public class Main {
 //        }
 //
 
+
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println("");
+//            for (int j = 0; j <i; j++) {
+//                System.out.print("x");
+//            }
+//        }
+
+
+        int[] masiv = {1,3,4};
+int count = 0;
+int itog = 0;
+int temp = 0;
+int[] Newmasiv = new int[masiv.length];
+
+        for (int i = 0; i < masiv.length; i++) {
+
+            for (int k = 0; k < masiv.length; k++) {
+
+              if (masiv[i] < masiv[k]){
+                  temp = masiv[i];
+                  masiv[i] = masiv[k];
+                  masiv[k] = temp;
+              }
+            }
+
+        }
+
+
+
+
+        int min = masiv[0];
+        int max = masiv[masiv.length-1];
+
+
+
+        for (int h = 0; h < masiv.length; h++) {
+            count += masiv[h];
+if ( count >= max){
+    itog = count - max;
+    break;
+}
+
+        }
+
+        System.out.println(itog);
 
         }
     }
